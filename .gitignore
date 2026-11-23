@@ -1,0 +1,36 @@
+# Only these sibling folders belong to this repository.
+/*
+!/.gitignore
+!/README.md
+!/MD/
+!/Design System/
+
+# Local files and tooling.
+.DS_Store
+.AppleDouble
+Thumbs.db
+__pycache__/
+*.py[cod]
+node_modules/
+.tools/
+.venv/
+venv/
+.pytest_cache/
+.cache/
+*.log
+
+# Secrets and machine-specific agent settings.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+.claude/
+.codex/
+
+# Local snapshots; preserve originals on disk.
+/Design System/backups/
+/Design System/site-preview.png
