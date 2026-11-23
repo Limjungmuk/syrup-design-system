@@ -1,9 +1,9 @@
-# Only these sibling folders belong to this repository.
+# Only share design-system MD; web implementation stays local.
 /*
 !/.gitignore
 !/README.md
+!/AGENTS.md
 !/MD/
-!/Design System/
 
 # Local files and tooling.
 .DS_Store
@@ -34,3 +34,7 @@ venv/
 # Local snapshots; preserve originals on disk.
 /Design System/backups/
 /Design System/site-preview.png
+
+# Do not publish the website or its production specification.
+/Design System/
+/MD/Design System Web/

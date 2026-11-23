@@ -1,42 +1,16 @@
-# Syrup Design System
+# Syrup Design System MD
 
-디자인 시스템 Markdown 원본과 문서 웹을 함께 관리합니다.
+시럽 디자인 시스템의 최신 Markdown 사용 기준을 공유합니다.
 
-## 폴더 구성
+## 문서
 
-- `MD/`: 컴포넌트별 원본, 디자인 토큰, 피그마용 통합 가이드, 웹 제작 MD.
-- `Design System/content/`: 문서와 Figma 자산의 연결 정보.
-- `Design System/tools/`: MD 빌드·로컬 서버·검사 도구.
-- `Design System/site/`: 웹 소스, 정적 자산, 동작 예제 소스와 생성된 JS·CSS, 공개 다운로드.
+- [개별 MD 목록](MD/): 컴포넌트별 사용 기준과 디자인 토큰
+- [피그마용 통합 가이드](MD/figma-agent-guidelines/syrup-figma-agent-guidelines.md): 핵심 사용 기준 통합본
 
-두 폴더는 형제 관계를 유지합니다. 빌드 도구는 `Design System`에서 `../MD`를 참조합니다.
+필요한 MD 링크를 GitHub·웹 링크를 읽을 수 있는 AI 도구에 전달하고, 작업 시작 시 최신 본문을 다시 읽도록 요청하세요. 기존 대화가 자동 갱신되지는 않습니다. 링크를 읽지 못하는 도구에서는 파일을 첨부합니다.
 
-## 로컬 실행
+## 관리 범위
 
-`Design System/시럽 로컬 실행.command`를 더블클릭하거나 아래 명령을 실행합니다.
+이 공개 저장소에는 공유용 MD와 저장소 관리 문서만 포함합니다. 디자인 시스템 웹 소스와 웹 제작 MD는 게시하지 않습니다. 제외된 로컬 파일은 삭제하지 않습니다.
 
-```sh
-cd "Design System"
-python3 tools/serve.py
-```
-
-브라우저에서 http://localhost:4173 을 엽니다. 생성된 정적 파일을 포함하므로 미리보기 실행에 Node 설치는 필수가 아닙니다.
-
-## MD 변경 후 웹 갱신과 확인
-
-```sh
-cd "Design System"
-python3 -m pip install --target .tools -r tools/requirements.txt
-python3 tools/build.py
-python3 tools/check.py
-```
-
-원본 MD 변경 후 웹 데이터·다운로드 MD·전체 ZIP을 함께 생성하고, 변경 결과를 확인합니다. 빌드는 Figma 이미지를 자동으로 갱신하지 않습니다.
-
-React 동작 예제의 TSX·CSS 소스는 `Design System/site/code/`에 있으며, 현재 웹에서 사용하는 생성된 번들도 포함합니다. 기존 MD 빌드는 React 번들을 다시 컴파일하지 않습니다. React 재컴파일용 프로젝트 설정은 별도 보완 대상입니다.
-
-## Git 관리 범위
-
-`MD/`와 `Design System/`을 관리합니다. 로컬 의존성·캐시·개인 설정·백업과 최상위의 영상·디자인 작업 폴더는 제외합니다. 제외된 파일은 PC에서 삭제하지 않습니다.
-
-GitHub Push와 공개 사이트 배포는 별개입니다. 이 저장소 연결만으로 기존 공개 사이트의 자동 배포를 설정하지 않습니다.
+공유용 MD를 변경하면 관련 내용과 민감정보 포함 여부를 확인한 뒤 Commit·Push합니다. GitHub 반영과 별도 웹사이트 배포는 서로 독립적입니다.
