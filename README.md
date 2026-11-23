@@ -5,6 +5,7 @@
 ## 문서
 
 - [개별 MD 목록](MD/): 컴포넌트별 사용 기준과 디자인 토큰
+- [Writing](MD/syrup-writing.md): 문구 작성과 날짜·시간 표기 기준
 - [피그마용 통합 가이드](MD/figma-agent-guidelines/syrup-figma-agent-guidelines.md): 핵심 사용 기준 통합본
 
 필요한 MD 링크를 GitHub·웹 링크를 읽을 수 있는 AI 도구에 전달하고, 작업 시작 시 최신 본문을 다시 읽도록 요청하세요. 기존 대화가 자동 갱신되지는 않습니다. 링크를 읽지 못하는 도구에서는 파일을 첨부합니다.
