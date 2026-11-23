@@ -4,9 +4,9 @@
 | --- | --- |
 | Figma File | [Syrup_Design-System](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System) |
 | Page / Section | `List Header` 페이지 → [List Header 섹션 `8917:7270`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=8917-7270) |
-| 섹션 구성 | List Header 1440×2644 → Guidelines 960×1585 → Usage 3760×398 |
+| 섹션 구성 | List Header 1440×2644 → Guidelines 960×1853 → Usage 4160×398 |
 | 컴포넌트 수 | **5개** (전부 Component Set) |
-| 기준일 | 2026-11-09 (가이드라인 5항목 · 예제 9패턴 반영) |
+| 기준일 | 2026-11-23 (N 뱃지·가이드라인 6항목·예제 A~J·I 패딩 0 확인) |
 | 관련 문서 | [syrup-design-tokens.md](syrup-design-tokens.md) · [syrup-ad-components.md](syrup-ad-components.md) · [syrup-dialog-components.md](syrup-dialog-components.md) · [syrup-alert-components.md](syrup-alert-components.md) · [syrup-badge-components.md](syrup-badge-components.md) · [syrup-banner-components.md](syrup-banner-components.md) · [syrup-border-components.md](syrup-border-components.md) · [syrup-bottom-info-components.md](syrup-bottom-info-components.md) · [syrup-bottom-cta-components.md](syrup-bottom-cta-components.md) · [syrup-bottom-sheet-components.md](syrup-bottom-sheet-components.md) · [syrup-bubble-components.md](syrup-bubble-components.md) · [syrup-button-components.md](syrup-button-components.md) · [syrup-card-components.md](syrup-card-components.md) · [syrup-checkbox-components.md](syrup-checkbox-components.md) · [syrup-chip-components.md](syrup-chip-components.md) · [syrup-dim-components.md](syrup-dim-components.md) · [syrup-grid-list-components.md](syrup-grid-list-components.md) · [syrup-grid-scroll-components.md](syrup-grid-scroll-components.md) · [syrup-header-components.md](syrup-header-components.md) · [syrup-icon-button-components.md](syrup-icon-button-components.md) · [syrup-indicator-components.md](syrup-indicator-components.md) · [syrup-keypad-components.md](syrup-keypad-components.md) · [syrup-label-components.md](syrup-label-components.md) · [syrup-list-footer-components.md](syrup-list-footer-components.md) · [syrup-list-row-components.md](syrup-list-row-components.md) · [syrup-loader-components.md](syrup-loader-components.md) · [syrup-lottie-components.md](syrup-lottie-components.md) · [syrup-product-grid-components.md](syrup-product-grid-components.md) · [syrup-product-list-components.md](syrup-product-list-components.md) · [syrup-product-scroll-components.md](syrup-product-scroll-components.md) · [syrup-progress-stepper-components.md](syrup-progress-stepper-components.md) · [syrup-result-components.md](syrup-result-components.md) · [syrup-search-field-components.md](syrup-search-field-components.md) · [syrup-stepper-components.md](syrup-stepper-components.md) · [syrup-swipe-components.md](syrup-swipe-components.md) · [syrup-switch-components.md](syrup-switch-components.md) · [syrup-tab-components.md](syrup-tab-components.md) · [syrup-tab-bar-components.md](syrup-tab-bar-components.md) · [syrup-text-button-components.md](syrup-text-button-components.md) · [syrup-text-field-components.md](syrup-text-field-components.md) · [syrup-ticker-components.md](syrup-ticker-components.md) · [syrup-toast-components.md](syrup-toast-components.md) |
 
 > **목록이나 콘텐츠 묶음의 주제와 필요한 안내·기능을 보여주는 헤더 컴포넌트예요.**
@@ -31,7 +31,7 @@
 
 ## 구성 한눈에 보기
 
-마스터 섹션은 1440×2644입니다. 마스터 하나에 primitive 4종이 붙는 구조로, [Header](syrup-header-components.md)와 역할이 다릅니다. 별도 Guidelines 5항목과 Usage 9패턴을 사용합니다.
+마스터 섹션은 1440×2644입니다. 마스터 하나에 primitive 4종이 붙는 구조로, [Header](syrup-header-components.md)와 역할이 다릅니다. 별도 Guidelines 6항목과 Usage 10패턴을 사용합니다.
 
 | | Header | **List Header** |
 | --- | --- | --- |
@@ -113,21 +113,22 @@
 
 ### .primitive / List Header / Title Acc
 
-**Node** `10105:21553` · Component Set · **3 variants**
+**Node** `10105:21553` · Component Set · **4 variants**
 
 제목 **오른쪽에 붙는 보조 요소**입니다.
 
 | Property | Type | Default | Options |
 | --- | --- | --- | --- |
-| `Type` | VARIANT | `Info` | `Info` · `Arrow` · `Alarm` |
+| `Type` | VARIANT | `Info` | `Info` · `Arrow` · `Alarm` · `Badge` |
 
 | Variant | 크기 | 내용 | 출처 |
 | --- | --- | --- | --- |
 | `Info` | 24 × 24 | ⓘ 도움말 | **[Icon Button](syrup-icon-button-components.md)** ▸ `Icon Button / Info` |
 | `Arrow` | 20 × 20 | 화살표 | **`❖Components`** ▸ `Icon / Arrow` |
 | `Alarm` | 69 × 18 | "알림받기" | **[Button](syrup-button-components.md)** ▸ `Button / Alert` |
+| `Badge` | 20 × 20 | 새로운 내용 N | [Badge](syrup-badge-components.md) · Type=New |
 
-**세 variant 모두 다른 페이지의 컴포넌트**를 가져다 씁니다
+**네 variant 모두 다른 페이지의 컴포넌트**를 가져다 씁니다
 
 (2026-10-12 `Property 1` → `Type` 정리 완료)
 
@@ -202,8 +203,8 @@
 
 | 항목 | 값 |
 | --- | --- |
-| 섹션 | [Usage `11594:6662`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11594-6662) · 3760×398 |
-| 구성 | A~I 9패턴 · 슬롯 폭 360 · List Header 인스턴스 11개 |
+| 섹션 | [Usage `11594:6662`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11594-6662) · 4160×398 |
+| 구성 | A~J 10패턴 · 슬롯 폭 360 · List Header 인스턴스 12개 |
 | 템플릿 | Usage `11237:46733` · ❖System Components |
 
 실제 List Header 인스턴스를 재사용하고, 설명에 필요한 요소만 남깁니다. 전체 제품 화면을 복제하지 않습니다. 설명 영역–슬롯 간격은 50이며 현재 사례의 배치와 문구를 유지합니다.
@@ -218,14 +219,16 @@
 | F. 날짜·알림 기능 | `11594:6989` | 날짜나 현재 영역에 관련된 기능을 제목 옆과 오른쪽에 배치해요. 알림은 설정 상태에 맞는 문구와 아이콘을 사용해요. | 「2025년 7월 4일」 + Title Acc Arrow / 오른쪽 Alarm |
 | G. 여러 줄 제목 | `11594:7064` | 제목이 길면 내용에 맞게 줄바꿈해요. 제목 높이가 늘어날 때 전체 Header와 아래 콘텐츠도 함께 밀려나도록 구성해요. | 「챌린지 적립 도전하고 / 금 모으기!」 · Sub Text=False · 높이 48 |
 | H. 텍스트 버튼 | `11595:5090` | 안내 보기처럼 제목과 관련된 추가 행동은 오른쪽 Text Button으로 제공해요. 기준 시각처럼 읽는 정보와 구분하고, 실행할 내용을 문구로 알려줘요. | 「금돼지 두드리고 50금 더 받기」 + 「안내」 Text Button + Sub Text=True |
-| I. 검색 결과 제목 | `11597:5145` | 검색 결과 제목에서는 검색 키워드만 굵게 표시하고, 나머지 문구는 Regular로 표시해요. 검색 결과에 한정해 적용하고, 일반 섹션 제목은 기존 스타일을 유지해요. | 「검색어 검색결과」 · 키워드 Bold / 나머지 Regular · Padding=24 |
+| I. 검색 결과 제목 | `11597:5145` | 검색 결과 제목에서는 검색 키워드만 굵게 표시하고, 나머지 문구는 Regular로 표시해요. 검색 결과에 한정해 적용하고, 일반 섹션 제목은 기존 스타일을 유지해요. | 「검색어 검색결과」 · 키워드 Bold / 나머지 Regular · Padding=0 |
+
+| J. 새로운 내용 안내 | `12412:463` | 새롭게 제공하는 내용이 있는 제목 옆에 N을 표시해요. 수량이나 완료 표시와 구분해요. | List Header 인스턴스만 사용 · Padding=0 · Title Acc=Badge · Badge Type=New |
 
 C와 D는 각각 두 가지 구성으로 기능 차이를 보여줍니다. H는 제목 중 「50금」만 강조 컬러를 사용하며, 안내 버튼은 읽기 전용 Text와 달리 실행 기능입니다.
 
 ### 사례별 크기와 여백
 
-- 현재 A~H의 내부 Header는 Padding=0이며, I는 Padding=24입니다. 문서 슬롯 폭 360을 제품 전체의 고정 폭·패딩으로 해석하지 않습니다.
-- A·C·D·E·F·I의 각 Header는 한 줄 기준 높이 24, B는 47, G는 48, H는 현재 문구 기준 46입니다. 모든 높이를 마스터 샘플 24/47로 강제하지 않습니다.
+- 현재 A~J의 내부 Header는 Padding=0입니다. 문서 슬롯 폭 360을 제품 전체의 고정 폭·패딩으로 해석하지 않습니다.
+- A·C·D·E·F·I·J의 각 Header는 한 줄 기준 높이 24, B는 47, G는 48, H는 현재 문구 기준 46입니다. 모든 높이를 마스터 샘플 24/47로 강제하지 않습니다.
 - 날짜, 기준 시각, 시각 숫자, 리워드는 설명용 샘플입니다. 실제 상태·데이터·행동에 맞춰 변경합니다.
 
 ### 검색 결과 제목에 한정된 굵기 규칙
@@ -236,9 +239,9 @@ I의 실제 문구는 「검색어 검색결과」입니다. 「검색어 」구
 
 ## Guidelines
 
-[Guidelines `11594:6661`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11594-6661) · 960×1585 · 5항목
+[Guidelines `11594:6661`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11594-6661) · 960×1853 · 6항목
 
-각 항목은 Guidelines 템플릿 `11237:44468`의 좌우 슬롯으로 허용된 구성을 비교합니다. Do / Don’t 형식은 아닙니다. 순서는 제목·보조 설명 → 컬러 강조 → 부가 정보·기능 → 여백 → 긴 제목이며, 설명 영역–슬롯 간격은 50입니다.
+각 항목은 Guidelines 템플릿 `11237:44468`의 좌우 슬롯으로 허용된 구성을 비교합니다. Do / Don’t 형식은 아닙니다. 순서는 제목·보조 설명 → 컬러 강조 → 새로운 내용 N 뱃지 → 부가 정보·기능 → 여백 → 긴 제목이며, 설명 영역–슬롯 간격은 50입니다.
 
 ### 1. 제목과 보조 설명의 역할을 나눠요
 
@@ -270,7 +273,15 @@ I의 실제 문구는 「검색어 검색결과」입니다. 「검색어 」구
 
 컬러 강조는 글자 굵기를 바꾸는 검색 결과 제목 규칙과 별개입니다. 현재 컬러 비교 예제는 두 경우 모두 Bold를 유지합니다.
 
-### 3. 부가 정보와 기능은 목적에 맞게 선택해요
+### 3. 새로운 내용은 제목 옆 N 뱃지로 안내해요
+
+**Node** `12412:434` · Guidelines 템플릿 `11237:44468`의 인스턴스
+
+새로운 내용이 있는 영역은 제목 바로 옆에 N 뱃지를 붙여 안내해요. Title의 `Title Acc=True`를 켜고, Title Acc의 `Type=Badge`, 내부 Badge의 `Type=New`를 사용해요. 제목–뱃지 간격은 기존 4를 유지하며 뱃지는 20×20이에요. N은 새로운 내용 표시이며 수량·읽지 않은 개수·완료를 뜻하지 않아요. 표시하지 않을 때는 Title Acc를 꺼요.
+
+좌우 슬롯은 N 표시 있음 / 없음의 List Header 인스턴스로 구성해요. 문서용 Guidelines와 Usage 템플릿도 연결을 유지하고 분리하지 않아요. 예제 J에는 List Header만 넣고 금 이미지·금액·Bubble·Alert 등 다른 요소를 포함하지 않아요.
+
+### 4. 부가 정보와 기능은 목적에 맞게 선택해요
 
 **Node** `11594:7194`
 
@@ -282,9 +293,9 @@ I의 실제 문구는 「검색어 검색결과」입니다. 「검색어 」구
 | 제목 옆 Info · 오른쪽 AD | 오른쪽 · 갱신 시각과 새로고침 |
 | 「11번가 상품 추천」 + Info + AD | 「선물왕 랭킹 TOP 100」 + Refresh 13:00 |
 
-Title Acc는 제목에 붙는 Info/Arrow/Alarm, Tailing Acc는 헤더 오른쪽 정보·기능입니다. Text와 Text Button은 읽기 전용 정보와 실행 행동이라는 역할이 다르며 서로 대체하지 않습니다. 텍스트 버튼은 Usage H, 광고 출처·아이콘 새로고침은 Usage C·D에서 추가로 설명합니다.
+Title Acc는 제목에 붙는 Info/Arrow/Alarm/Badge, Tailing Acc는 헤더 오른쪽 정보·기능입니다. Text와 Text Button은 읽기 전용 정보와 실행 행동이라는 역할이 다르며 서로 대체하지 않습니다. 텍스트 버튼은 Usage H, 광고 출처·아이콘 새로고침은 Usage C·D에서 추가로 설명합니다.
 
-### 4. 부모 영역과 제목의 좌우 여백을 맞춰요
+### 5. 부모 영역과 제목의 좌우 여백을 맞춰요
 
 **Node** `11594:7273`
 
@@ -299,7 +310,7 @@ Title Acc는 제목에 붙는 Info/Arrow/Alarm, Tailing Acc는 헤더 오른쪽 
 
 Padding은 상하 여백이나 제목 크기를 뜻하지 않습니다. 부모의 16과 Header의 8을 합쳐 시작선을 맞추는 등 실제 컨테이너 구조를 함께 계산합니다. 숫자로 표시된 variant 값은 문자열 0/8/24입니다.
 
-### 5. 긴 제목은 줄바꿈에 맞춰 높이를 늘려요
+### 6. 긴 제목은 줄바꿈에 맞춰 높이를 늘려요
 
 **Node** `11594:7352`
 
@@ -320,14 +331,14 @@ Padding은 상하 여백이나 제목 크기를 뜻하지 않습니다. 부모�
 1. List Header는 목록·콘텐츠 묶음의 제목입니다. 화면 상단 Header의 신규 타이틀 숨김 기준을 적용해 목록 제목을 제거하지 않습니다.
 2. 기존 List Header 인스턴스를 재사용하고 필요한 Sub Text·Tailing Acc만 선택합니다. 불필요한 기본 보조 요소가 남지 않았는지 확인합니다.
 3. 실제 상위 속성은 VARIANT Padding(문자열 0/8/24), Sub Text(문자열 False/True), BOOLEAN `Tailing Acc#10083:0`입니다. 부가 요소 종류는 하위 primitive의 Type에서 선택합니다.
-4. 제목 옆 표시 여부는 Title의 BOOLEAN `Title Acc#10105:13`으로 구분하며, Info/Arrow/Alarm은 하위 Title Acc에서 선택합니다. 상위 오른쪽 표시 여부와 혼동하지 않습니다.
+4. 제목 옆 표시 여부는 Title의 BOOLEAN `Title Acc#10105:13`으로 구분하며, Info/Arrow/Alarm/Badge는 하위 Title Acc에서 선택합니다. 상위 오른쪽 표시 여부와 혼동하지 않습니다.
 5. 오른쪽은 Text/Text Button/AD/Refresh/Refresh Circle/Alarm 중 역할에 맞게 선택합니다. `Refresh Circle`은 공백이 있는 실제 값이며 이전 이름 Refresh_Circle을 사용하지 않습니다.
 6. 읽기 전용 Text·광고 표기를 실행 버튼으로 취급하지 않습니다. 안내 등 추가 행동은 Text Button을 사용합니다. 알림은 실제 설정 상태, 새로고침은 현재 갱신 시각과 맞춥니다.
 7. 컬러 강조는 제목의 필요한 구간에만 기존 토큰을 적용합니다. 샘플에서 강조된 ON AIR!·50금이라는 문자열을 모든 화면에 고정하지 않습니다.
 8. 검색 결과에서는 키워드만 Bold, 그 외 문구는 Regular입니다. 이 예외를 일반 섹션 제목에 확대 적용하거나 혼합 스타일 전체를 한 가지 굵기로 덮어쓰지 않습니다.
 9. 제목의 여러 줄과 보조 설명을 구분합니다. 긴 제목·보조 설명의 실제 높이를 따라 아래 콘텐츠를 배치하며 24/47 고정으로 잘라내지 않습니다.
 10. Padding은 부모 여백과 합산해 아래 콘텐츠의 시작선에 맞춥니다. 문서의 폭 360이나 예제별 패딩을 모든 제품 컨테이너에 일괄 적용하지 않습니다.
-11. 이번 업데이트는 MD 문서만 수정합니다. Figma의 사용자 수정 배치·마스터·토큰·속성명은 변경하지 않습니다.
+11. Figma 마스터·토큰·사용자 속성명은 유지합니다. 문서는 기존 Guidelines·Usage 컴포넌트 인스턴스로 구성합니다. 웹 이미지 반영은 다음 배포 때 진행합니다.
 
 ---
 
@@ -348,3 +359,10 @@ Padding은 상하 여백이나 제목 크기를 뜻하지 않습니다. 부모�
 이전 2026-10-12 문서의 전체 노드·인스턴스·미바인딩·외부 토큰 건수와 정리 우선순위는 현재 문서 추가 이후 현황으로 재검증하지 않아 최신 현황에서 제외했습니다. 구성 표의 과거 인스턴스 집계는 기준일을 표시했습니다. 과거 마스터 사용 0건은 현재 Section 1과 문서의 사용 여부를 설명하는 수치가 아닙니다.
 
 기존 본체·primitive 스펙은 유지하며 MD 업데이트를 이유로 속성 이름을 재설계하거나 기존 아이콘·색상을 임의 치환하지 않습니다. Icon Button·Text Button·Button/Alert 같은 재사용 컴포넌트가 변경되면 List Header의 관련 조합도 함께 확인합니다.
+
+
+## 2026-11-23 확인 및 다음 웹 반영 대기
+
+- 가이드라인 3은 Guidelines 컴포넌트 인스턴스 `12412:434`, 예제 J는 Usage 컴포넌트 인스턴스 `12412:463`을 사용한다. 이전 분리 프레임 `12411:446`·`12411:459`는 대체됐다.
+- 예제 I `11597:5145`의 List Header는 사용자가 Padding=0으로 변경했으며 실제 좌우 패딩 0을 확인했다. 검색 키워드 Bold / 나머지 Regular 규칙은 유지한다.
+- 다음 웹 업데이트 때 가이드라인 3과 재정렬된 4~6, 예제 J, 예제 I의 최신 Figma 이미지를 다시 내보내 반영한다. 이번 작업은 Figma와 MD 반영이며 웹 이미지·다운로드·배포는 대기한다.
