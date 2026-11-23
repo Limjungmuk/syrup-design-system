@@ -4,10 +4,10 @@
 | --- | --- |
 | Figma File | [Syrup_Design-System](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System) |
 | Page / Section | `Text Field` 페이지 → [Text Field 섹션 `8795:37747`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=8795-37747) |
-| 마스터 섹션 크기 | 1440 × 2154 |
-| 컴포넌트 수 | **3개** |
-| Variant 총수 | **24개** (20 · 2 · 2) |
-| 기준일 | 2026-11-10 (마스터 높이 통일·가이드라인 5개·Usage A~F 반영) |
+| 마스터 섹션 크기 | 최신 Figma 원본 배치 기준 |
+| 컴포넌트 수 | 입력 3종 + 보조 Character Progress 1종 |
+| Variant 총수 | **31개** (20 · 4 · 2 + 보조 5) |
+| 기준일 | 2026-11-23 (자동 높이·하단 표시·Guidelines 8개·Usage A~I) |
 | 관련 문서 | [syrup-design-tokens.md](syrup-design-tokens.md) · [syrup-ad-components.md](syrup-ad-components.md) · [syrup-alert-components.md](syrup-alert-components.md) · [syrup-badge-components.md](syrup-badge-components.md) · [syrup-banner-components.md](syrup-banner-components.md) · [syrup-border-components.md](syrup-border-components.md) · [syrup-bottom-cta-components.md](syrup-bottom-cta-components.md) · [syrup-bottom-info-components.md](syrup-bottom-info-components.md) · [syrup-bottom-sheet-components.md](syrup-bottom-sheet-components.md) · [syrup-bubble-components.md](syrup-bubble-components.md) · [syrup-button-components.md](syrup-button-components.md) · [syrup-card-components.md](syrup-card-components.md) · [syrup-checkbox-components.md](syrup-checkbox-components.md) · [syrup-chip-components.md](syrup-chip-components.md) · [syrup-dialog-components.md](syrup-dialog-components.md) · [syrup-dim-components.md](syrup-dim-components.md) · [syrup-grid-list-components.md](syrup-grid-list-components.md) · [syrup-grid-scroll-components.md](syrup-grid-scroll-components.md) · [syrup-header-components.md](syrup-header-components.md) · [syrup-icon-button-components.md](syrup-icon-button-components.md) · [syrup-indicator-components.md](syrup-indicator-components.md) · [syrup-keypad-components.md](syrup-keypad-components.md) · [syrup-label-components.md](syrup-label-components.md) · [syrup-list-footer-components.md](syrup-list-footer-components.md) · [syrup-list-header-components.md](syrup-list-header-components.md) · [syrup-list-row-components.md](syrup-list-row-components.md) · [syrup-loader-components.md](syrup-loader-components.md) · [syrup-lottie-components.md](syrup-lottie-components.md) · [syrup-product-grid-components.md](syrup-product-grid-components.md) · [syrup-product-list-components.md](syrup-product-list-components.md) · [syrup-product-scroll-components.md](syrup-product-scroll-components.md) · [syrup-progress-stepper-components.md](syrup-progress-stepper-components.md) · [syrup-result-components.md](syrup-result-components.md) · [syrup-search-field-components.md](syrup-search-field-components.md) · [syrup-stepper-components.md](syrup-stepper-components.md) · [syrup-swipe-components.md](syrup-swipe-components.md) · [syrup-switch-components.md](syrup-switch-components.md) · [syrup-tab-components.md](syrup-tab-components.md) · [syrup-tab-bar-components.md](syrup-tab-bar-components.md) · [syrup-text-button-components.md](syrup-text-button-components.md) · [syrup-ticker-components.md](syrup-ticker-components.md) · [syrup-toast-components.md](syrup-toast-components.md) |
 
 > **사용자가 텍스트를 입력하거나 수정할 수 있는 입력 컴포넌트에요.**
@@ -32,7 +32,7 @@
 
 ## 구성 한눈에 보기
 
-현재 마스터 섹션은 1440 × 2154예요. 기존 노드 192개·텍스트 64개, 아래 보드 위치·인스턴스 0건은 2026-10-12 점검 기록으로, 현재 페이지 전체 집계가 아니에요.
+현재 마스터 섹션의 크기는 최신 Figma 배치를 기준으로 해요. 아래 보드 위치는 과거 점검 기록이에요. 기존 노드 192개·텍스트 64개, 아래 보드 위치·인스턴스 0건은 2026-10-12 점검 기록으로, 현재 페이지 전체 집계가 아니에요.
 
 | 보드 위치 | 섹션 | 내용 |
 | --- | --- | --- |
@@ -43,10 +43,10 @@
 | # | 이름 | 타입 | Variant 축 | 크기 | 인스턴스 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | `Text Field` | **Set 20** | `State`(7) × `Type`(4) | 360 × 80 (모든 상태 FIXED) | **0** |
-| 2 | `Text Field / Text Area` | Set 2 | `Filled` | 312 × 294 | **0** |
+| 2 | `Text Field / Text Area` | Set 4 | `Filled` × `Auto Height` | 폭 312 · 최소 높이 80 | **0** |
 | 3 | `Text Field / Task` | Set 2 | `Filled` | 326 × 64 | **0** |
 
-Child Item(`.primitive`)이 **하나도 없습니다.** 세 컴포넌트가 모두 완결된 형태입니다.
+Text Area는 하단 표시용 Character Progress 보조 컴포넌트를 사용해요. 입력 3종의 Variant 26개와 보조 5개를 구분해요.
 
 ---
 
@@ -116,24 +116,32 @@ Child Item(`.primitive`)이 **하나도 없습니다.** 세 컴포넌트가 모�
 
 ## 2. Text Field / Text Area
 
-**Node** `10002:64297` · Component Set · **2 variants** · 기본 **312 × 294**
+**Node** `10002:64297` · Component Set · **4 variants** · 폭 **312**, 최소 높이 **80**
 
-입력 영역 높이는 허용하는 최대 글자 수에 따라 설정해요. 현재 사용 예제에는 최대 50자·높이 98, 최대 500자·높이 294가 있고, 최대 200자·높이 294인 사용 사례도 있어요. 이 사례만으로 모든 글자 수에 대한 선형 계산식이나 고정 매핑을 만들지 않아요. 안내 문구에 최대 글자 수를 함께 표시해요.
-
-| Property | Options |
+| 속성 | 지원 값과 의미 |
 | --- | --- |
-| `Filled` | `False` · `True` |
+| Filled | False / True · 입력 내용 유무이며 완료 검증과 별개 |
+| Auto Height | False / True · 지정 높이·내부 스크롤 / 내용에 따른 확장·축소 |
+| Character Progress | False / True · 하단 표시 여부, 기본 False |
 
-가로 오토레이아웃 · Padding `16` 전면 (`Spacing/400` ✅) · 배경 `Color/Gray_White` ✅ · 라운드 10 (`Corner radius/250` ✅)
+세로 오토레이아웃, 사방 패딩 16, Text Container와 하단 표시 사이 Gap 16, 라운드 10을 유지해요. 본문은 15 Regular·행간 19, 하단은 높이 20·13 Regular·아이콘/숫자 간격 4예요. Text Container 안의 Placeholder / Text 레이어를 수정해요. 과거 `총 보유 SCON Credit` 레이어명은 현재 규격이 아니에요.
 
-| Filled | 테두리 | 텍스트 |
-| --- | --- | --- |
-| `False` | **`Color/Gray_800`** ✅ | 「자유롭게 의견을 작성해…」 15 Regular `b300_15_regular` · `Color/Gray_700` |
-| `True` | **`Color/Primary_Orange`** ✅ | 「안녕하세요 Syrup입…」 15 Regular `b300_15_regular` · `Color/Gray_100` |
+Filled=False는 회색 테두리, True는 주황 테두리예요. False를 Disabled로 해석하지 않아요. 고정형의 260px은 샘플 설정이며 모든 사용처의 필수 높이가 아니에요. Auto Height=True는 최소 80px부터 실제 본문 높이에 맞추고, 삭제와 폭 변경에도 다시 계산해요. 표시를 켜면 본문과 겹치지 않게 하단 20px과 Gap 16px을 확보해요.
 
-**비어 있는 상태(Filled=False)는 회색, 내용이 있는 상태(Filled=True)는 주황**으로 표시해요. Filled=False를 조작 불가인 Disabled 상태로 해석하지 않아요. [Search Field](syrup-search-field-components.md)가 세 상태 모두 주황인 것과 대조적입니다.
+### Character Progress
 
-텍스트 레이어명이 **`총 보유 SCON Credit`**으로, 내용과 전혀 맞지 않습니다 → [점검 1](#1-레이어명이-내용과-맞지-않음)
+보조 세트 `12368:10793`의 지원 조합은 Progress의 Default / In Progress / Ready / Complete와 Counter의 Default, 총 5개예요. Counter에 다른 상태가 있다고 가정하지 않아요.
+
+- Type=Progress: 좌측 하단의 주황 원형 진행률 + 남은 글자 수. 조건 충족 시 주황 원 안의 흰 체크와 0을 유지해요.
+- Type=Counter: 우측 하단 현재/최대 글자 수. 향후 확장용이며 현재 서비스 적용 사례는 없어요.
+- 표시 On/Off와 유효성 검증은 별개예요. 실제 후기 미션 최소 100글자는 최대 제한이 아니며, Counter 예시의 최대 100과 구분해요.
+
+### 입력·재생 조건
+공백과 줄바꿈을 포함한 화면 입력값을 Unicode 코드 포인트 단위(`Array.from(value).length`)로 계산해요. 한글 조합 중에도 화면 글자 수가 기준에 도달해 남은 수가 0이 되는 즉시 완료를 표시해요. 초과 입력의 남은 수는 0으로 유지해요. 조건 미만으로 삭제한 뒤 다시 충족하면 완료 모션이 재생돼요.
+
+완료 원은 20×20px을 유지하며 560ms 동안 scale 0.55→1.18→0.92→1.06→1로 나타나요. 흰 체크는 120ms 뒤부터 320ms 동안 드러나요. 모션 줄이기 환경에서는 최종 상태를 즉시 표시해요.
+
+웹 상단은 초기 플레이스홀더 2초 후 후기를 자음·모음 단위로 입력하고 잠시 유지한 뒤 빠르게 지우며 반복해요. 직접 클릭·입력하면 멈추고 값을 유지해요. 모두 지우고 입력 영역을 벗어나면 초기 2초 대기부터 다시 시작해요. 값이 남아 있으면 자동 재생하지 않아요. 하단 표시·유형 선택 설정은 기본 숨김이며 필요할 때만 다시 켤 수 있어요. 일시정지 버튼은 기존 우측 하단 위치를 유지해요.
 
 ---
 
@@ -198,13 +206,21 @@ Child Item(`.primitive`)이 **하나도 없습니다.** 세 컴포넌트가 모�
 - 만료 오류 예제는 시간 0:00과 「인증번호가 만료되었습니다.」를 함께 표시해요. 기본 마스터의 2:51 샘플값은 오류 예제에서 별도로 수정했어요.
 - [가이드라인 4](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1107)
 
-### 5. 최대 글자 수에 맞춰 입력 영역을 구성해요
+### 5. 여러 줄의 내용은 Text Area로 입력해요
 
-여러 줄 입력에는 Text Area를 사용하고, 비어 있으면 Filled=False, 내용이 있으면 Filled=True로 표시해요.
-입력 영역의 높이는 허용하는 최대 글자 수에 맞춰 설정하고, 안내 문구에 최대 글자 수를 함께 표시해요.
+의견이나 당첨 후기처럼 여러 줄의 내용에는 Text Field / Text Area를 사용해요. 비어 있으면 Filled=False, 내용이 있으면 Filled=True로 표시해요. 최소 작성 조건과 최대 입력 제한을 구분해요.
 
-- 비교: Filled=False · 입력 전 / Filled=True · 내용 입력
-- [가이드라인 5](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1166)
+### 6. 화면 목적에 맞게 높이를 고정하거나 자동으로 늘려요
+
+Auto Height=False는 지정한 높이를 유지하고 넘치는 본문은 내부 스크롤해요. True는 최소 높이 80px부터 실제 줄바꿈·입력량·폭에 따라 늘어나고, 삭제하면 줄어들어요. 글자 수로 높이를 계산하지 않아요. 사방 패딩 16px, 본문과 하단 표시 사이 간격 16px, 하단 표시 높이 20px을 유지해요.
+
+### 7. 글자 수 안내가 필요할 때만 하단 표시를 켜요
+
+Character Progress로 하단 표시를 켜거나 꺼요. Type=Progress는 좌측 원형 진행률과 남은 글자 수, Type=Counter는 우측 현재/최대 글자 수예요. 함께 사용하지 않아요. 표시를 꺼도 입력값과 작성 조건 검증은 유지해요.
+
+### 8. 필수 작성 조건과 최대 글자 수를 구분해요
+
+금한돈 당첨 후기 미션은 최소 100글자가 필수예요. Progress는 입력할수록 채워지고 조건 충족 즉시 체크와 0을 표시해요. 삭제해 조건 미만이면 진행 중으로 돌아가요. 최소 조건은 최대 입력 제한이나 리워드 지급 완료가 아니에요. Counter는 향후 확장용이며 현재 서비스 사용 사례는 없어요. 웹 상단만 30글자 완료 시연이에요.
 
 ---
 
@@ -219,7 +235,10 @@ Child Item(`.primitive`)이 **하나도 없습니다.** 세 컴포넌트가 모�
 | C. 인증 요청과 번호 입력 | 휴대폰번호 입력 옆에서 인증을 요청하고, 인증번호 입력에는 남은 시간을 함께 보여줘요. 인증번호를 입력한 상태와 인증 성공은 구분해요. | Text+Button · Complete + Text · Complete_Time | [C](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1255) |
 | D. 생년월일 입력 | Birth를 사용해 생년월일과 추가 식별 정보를 구분해요. 민감한 정보는 기존 컴포넌트의 마스킹 방식으로 표시해요. | Birth · Complete | [D](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1285) |
 | E. 할 일 직접 입력 | 목록에서 원하는 할 일을 직접 입력해요. 내용이 없으면 Filled=False, 입력한 내용이 있으면 Filled=True로 표시해요. | Task · Filled=False / True · 예제 폭 328, 높이 64 | [E](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1310) |
-| F. 의견과 소감 작성 | Text Area로 여러 줄의 내용을 입력해요. 입력 영역의 높이는 허용하는 최대 글자 수에 맞추고, 안내 문구에 최대 글자 수를 함께 표시해요. | Filled=False 2개 · 최대 50자/높이 98, 최대 500자/높이 294 | [F](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1344) |
+| F. 의견과 소감 작성 | 여러 줄 의견을 입력하고 하단 안내는 필요할 때만 켜요. | Text Area · Filled | [F](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1344) |
+| G. 고정 높이와 자동 높이 | 지정 높이·내부 스크롤과 최소 80px부터 내용에 따른 확장·축소를 비교해요. | Text Area | [G](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-705) |
+| H. 필수 후기 작성 진행률 | 최소 100글자 후기의 입력 전·진행 중·완료와 재입력 조건을 안내해요. | Text Area | [H](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-740) |
+| I. 선택형 글자 수 카운터 | 우측 현재/최대 글자 수를 표시하는 확장용 예시예요. | Text Area | [I](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-775) |
 
 ## 문서용 정렬 설정과 실제 사용 규격
 
@@ -238,7 +257,7 @@ Text Area의 내부 패딩 16, Task의 왼쪽 20·오른쪽 24는 각 컴포넌�
 
 ### 예제 레이아웃과 AI 사용 기준
 
-- Guidelines는 960 × 2160, Usage는 2560 × 750이에요. 기존 섹션의 흰 배경·모서리 24를 사용해요.
+- Guidelines와 Usage는 최신 Figma 섹션 배치를 기준으로 해요. 기존 섹션의 흰 배경·모서리 24를 사용해요.
 - Slot은 폭 360, 패딩 0, 좌측·상단 정렬, 높이 Hug예요. 관련 컴포넌트를 직접 넣고 별도 ‘화면’ 래퍼를 만들지 않았어요.
 - 제목·설명 영역 끝과 Slot 사이 간격은 50이에요. Usage 설명 영역 높이를 맞춰 예제 시작점을 정렬했어요.
 - Slot 패딩 0과 기본 Text Field의 문서용 왼쪽 패딩 0은 서로 다른 설정이에요. Slot은 문서 배치 컨테이너이고, Text Field 패딩은 컴포넌트 내부 규격이에요.
@@ -246,7 +265,7 @@ Text Area의 내부 패딩 16, Task의 왼쪽 20·오른쪽 24는 각 컴포넌�
 - Complete는 값 입력 후의 표시 상태예요. 별도의 검증 없이 인증 성공·요청 성공·제출 완료로 해석하지 않아요.
 - Text Area·Task의 Filled는 입력 내용 유무를 나타내요. 기본 Text Field의 State와 같은 속성으로 취급하지 않아요.
 - 글자 수 제한은 사용처별 규칙이에요. 50자·200자·500자 샘플을 모든 입력 컴포넌트의 공통 제한으로 사용하지 않아요.
-- 현재 입력된 글의 길이에 따라 Text Area가 자동 확장한다는 규칙이 아니에요. 허용하는 최대 글자 수를 기준으로 높이를 설정해요.
+- Auto Height=True는 실제 입력과 줄바꿈에 따라 확장·축소해요. False는 지정 높이와 내부 스크롤을 유지해요.
 
 ---
 
@@ -326,6 +345,8 @@ Text Area의 내부 패딩 16, Task의 왼쪽 20·오른쪽 24는 각 컴포넌�
 | `970303` | 3 | **샘플 데이터 값** |
 | `총 보유 SCON Credit` | 2 | **Text Area인데 내용과 무관** — 다른 컴포넌트에서 복제한 흔적 |
 | `생년월일 6자리` | 1 | 한글 문장 |
+
+2026-11-23 Text Area는 Text Container 안의 Placeholder / Text로 정리됐어요. 다음은 과거 기록이에요.
 
 **`총 보유 SCON Credit`이 특히 문제**입니다. [Text Area](#2-text-field--text-area)의 본문 레이어인데 내용은 「자유롭게 의견을 작성해…」입니다. 다른 화면에서 복사해 온 흔적이 이름에 남았습니다.
 
@@ -473,3 +494,8 @@ Text Area의 내부 패딩 16, Task의 왼쪽 20·오른쪽 24는 각 컴포넌�
 이 페이지의 핵심은 **[점검 1의 레이어명](#1-레이어명이-내용과-맞지-않음)** 입니다. 토큰은 이미 깨끗한데(미바인딩 색 0건 · 원격 스타일 0건) **레이어 이름이 내용과 어긋난 경우가 50건 가까이** 됩니다.
 
 특히 **`아이디` 29건**은 라벨·입력값·안내문을 가리지 않고 붙어 있어, 역할별로 나눠야 합니다. `Label` · `Value` · `Placeholder` 같은 기준을 정하면 한 번에 정리할 수 있습니다.
+
+
+## 2026-11-23 반영
+
+자동 높이·최소 높이, 하단 Progress/Counter 지원 조합, 최소 작성 조건과 최대 제한, 완료 모션과 자동 시연 복귀를 최신 원본에 맞춰 정리했어요. 가이드라인 8개와 예제 A~I를 제공해요.
