@@ -768,7 +768,7 @@ Figma G:11540-1870, U:11540-1871
 참여 가능은 Available, 참여 완료는 Completed, 시작 전은 Upcoming, 종료 후는 Ended를 사용해요.
 시간과 참여 여부에 맞는 상태를 선택하고, 참여할 수 없는 상태를 참여 가능한 버튼으로 표시하지 않아요.
 ### 적용 시 주의
-Review 본문만 최대4줄·초과 끝 말줄임(maxLines=4, textTruncation=ENDING). 폭118·13px/행간16·최대64px, 카드142×110을 유지해요. 닉네임·날짜와 구분하며 Ticker의 같은 인스턴스에도 적용해요. 다음 웹 갱신 때 관련 이미지를 다시 내보내요.
+Review 본문만 최대4줄·초과 끝 말줄임(maxLines=4, textTruncation=ENDING). 폭118·13px/행간16·최대64px, 카드142×110을 유지해요. 닉네임·날짜와 구분하며 Ticker의 같은 인스턴스에도 적용해요. 웹 관련 이미지도 최신 원본을 사용해요.
 ### 예제 유형
 - A 쇼핑 메뉴 탐색：`Grid Scroll / Icon` (`Variant=Shopping`)
 - B 시간대별 참여：`Grid Scroll / Live`
@@ -980,7 +980,7 @@ Title Acc=True → Type=Badge → Badge Type=New. N은 새로운 내용이며 �
 6. 긴 제목은 줄바꿈에 맞춰 높이를 늘려요
 제목 높이를 내용에 맞추고 Sub Text로 대체하지 않아요. 아래 목록·오른쪽 요소와 겹치지 않게 해요.
 ### 적용 시 주의
-검색 결과만 키워드 Bold·나머지 Regular. 예제 I는 사용자 수정 Padding=0이에요. 가이드3(12412:434)·J(12412:463)는 Guidelines·Usage 템플릿 인스턴스를 유지하며 J 슬롯에는 List Header만 넣어요. 다음 웹 갱신 때 I·J와 가이드3~6 이미지를 다시 내보내요.
+검색 결과만 키워드 Bold·나머지 Regular. 예제 I는 사용자 수정 Padding=0이에요. 가이드3(12412:434)·J(12412:463)는 Guidelines·Usage 템플릿 인스턴스를 유지하며 J 슬롯에는 List Header만 넣어요. 웹은 I·J와 가이드3~6 최신 이미지를 사용해요.
 ### 예제 유형
 - A. 기본 섹션 제목
 - B. 보조 설명 포함
