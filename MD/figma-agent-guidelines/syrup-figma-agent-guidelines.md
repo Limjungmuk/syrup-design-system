@@ -367,7 +367,7 @@ Figma G:11135-24, U:11105-9486
 1. Upper Item을 켰으면 내용을 채우세요
 버튼 위에 추가 안내나 보조 행동이 필요한 경우 Upper Item을 사용해요. 사용하지 않을 때는 Upper Item을 숨겨주세요.
 2. 2버튼은 왼쪽이 보조, 오른쪽이 주 행동
-버튼을 가로로 두 개 배치할 때는 왼쪽에 보조 행동(`Weak`), 오른쪽에 주요 행동(`Fill`)을 배치해요.
+버튼을 가로로 두 개 배치할 때는 왼쪽 보조 행동에 `Weak`, 오른쪽 주요 행동에 `Fill`을 사용해요.
 3. 비활성은 Weak + Disabled로 만드세요
 비활성 버튼은 색상을 직접 변경하지 않고, `Variant=Weak`와 `Disabled=True`를 적용해요.
 4. 행동의 관계에 따라 버튼 배치를 구분해요
@@ -502,7 +502,7 @@ Top은 꼬리가 위쪽, Bottom은 아래쪽에 있으며, Align은 꼬리의 �
 ### 적용 시 주의
 금 받기 전에는 Gold=True·Checkbox=False, 수령 완료 후에는 Gold=False·Checkbox=True로 바꿔요.
 ### 예제 유형
-- A 행동 유도：`Switch` (`Check=On`)
+- A 행동 유도：`Switch` · `Check=On`
 - B 실행 전 조건 안내：`Button` (`Icon=true` 「2배 받기」)
 - C 리워드 안내 · 적립 완료：`Button` 296 (「시럽 쿠팡가기」) 2단
 - D 상태와 횟수 안내：`Button` (`Variant=Weak` · `Disabled=True` 「정답」)
@@ -625,7 +625,7 @@ Circle과 Line을 제공해요. Line은 미선택에도 흐린 체크가 남아�
 - C 카드형 선택：`Card / My` × 2 (`Selected` ↔ `Default`)
 - D 간결한 선택 목록：`Bottom Sheet / Body / Selector / Select Item` × 2
 - E 할 일 상태：`List Row / Todo / Task` × 3
-- F 완료 표시：`Badge` (`Check=True`) · `Bubble` (`Checkbox=true`)
+- F 완료 표시：`Badge` · `Check=True` / `Bubble` · `Checkbox=true`
 ### 규격과 속성
 - 크기 / XS 16 · S 20 · M 24 · L 30 (정사각)
 - 테두리 두께 / 1 (전 사이즈 고정, `Circle`+미선택만)
@@ -692,7 +692,7 @@ Figma G:11514-3066, U:11514-2428
 - A 간단한 안내
 - B 행동 확인
 - C 설정·업데이트 안내
-- D 상세 안내：유의 사항 4줄 (`Body Text=false`)
+- D 상세 안내：유의 사항 4줄 · `Body Text=false`
 - E 정보 입력
 - F 항목 선택：`Checkbox` 3줄 (Npay 아이디)
 - G 공유 방법 선택
@@ -774,7 +774,7 @@ Figma G:11540-1870, U:11540-1871
 ### 적용 시 주의
 Review 본문만 최대4줄·초과 끝 말줄임(maxLines=4, textTruncation=ENDING). 폭118·13px/행간16·최대64px, 카드142×110을 유지해요. 닉네임·날짜와 구분하며 Ticker의 같은 인스턴스에도 적용해요. 웹 관련 이미지도 최신 원본을 사용해요.
 ### 예제 유형
-- A 쇼핑 메뉴 탐색：`Grid Scroll / Icon` (`Variant=Shopping`)
+- A 쇼핑 메뉴 탐색：`Grid Scroll / Icon` · `Variant=Shopping`
 - B 시간대별 참여：`Grid Scroll / Live`
 - C 당첨 후기 탐색：`Grid Scroll / Winner`
 ### 규격과 속성
@@ -1482,7 +1482,7 @@ Character Progress 기본False. Progress는 좌측 원형+남은 수, Counter는
 ### 적용 시 주의
 Text Area 폭312·최소높이80·패딩16·본문/하단Gap16·하단높이20. 본문15 Regular/행간19, 하단13 Regular/아이콘Gap4. Text Container의 Placeholder/Text를 수정해요. Filled×Auto Height 4조합, 보조 Progress의 Default/In Progress/Ready/Complete와 Counter의 Default만 지원해요. Task 패딩 왼쪽20·오른쪽24예요.
 공백·줄바꿈 포함 Array.from(value).length로 세고 한글 조합 중에도 기준 도달 즉시 체크와0을 표시해요. 미만 삭제 시 진행 중, 재충족 시 모션 재생이에요. 완료 원20은560ms scale .55→1.18→.92→1.06→1, 체크는120ms 뒤320ms. 모션 줄이기는 즉시 최종 상태예요.
-웹 상단만30글자 시연: 초기2초 후 자음·모음 입력·삭제 반복, 직접 편집하면 정지해요. 모두 지우고blur하면 초기부터 재시작하며 값이 남으면 유지해요. 설정은 기본 숨김、일시정지는 우측 하단이에요. 상세는syrup-text-field-components.md를 함께 읽어요.
+웹 상단만30글자 시연: 초기2초 후 자음·모음 입력·삭제 반복, 직접 편집하면 정지해요. 모두 지우고blur하면 초기부터 재시작하며 값이 남으면 유지해요. 설정은 기본 숨김、일시정지는 우측 하단이에요. 진행률0은 주황 선을 숨겨요.
 ### 예제 유형
 - A. 기본 정보 입력
 - B. 목록에서 값 선택

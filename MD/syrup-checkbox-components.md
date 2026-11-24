@@ -139,7 +139,7 @@
 | **C** | 카드형 선택 | 선택한 카드의 체크 표시와 테두리를 함께 강조해요. 단일·복수 선택 여부는 화면의 선택 방식에 따라 정해요. | `Card / My` × 2 (`Selected` ↔ `Default`) | `Circle` · `S` · `True` ↔ `False` |
 | **D** | 간결한 선택 목록 | 정렬이나 통신사 선택 목록에서는 선택한 항목을 Line 체크로 표시해요. 선택한 문구의 강조 상태도 함께 맞춰요. | `Bottom Sheet / Body / Selector / Select Item` × 2 | **`Line`** · `M` · `True` |
 | **E** | 할 일 상태 | 완료한 항목은 Checked=True로, 아직 실행할 수 없는 항목은 Disabled=True로 표시해요. 완료·미완료·비활성 상태를 구분해요. | `List Row / Todo / Task` × 3 | `Circle` · `M` · 완료 ↔ 미완료 ↔ **`Disabled=True`** |
-| **F** | 완료 표시 | Badge나 Bubble 안에서는 완료 상태를 알려주는 표시로 사용해요. 직접 선택하는 체크박스와 구분하고, 크기는 상위 컴포넌트의 기준을 따라요. | `Badge` (`Check=True`) · `Bubble` (`Checkbox=true`) | **`L`** 30 · **`XS`** 16 |
+| **F** | 완료 표시 | Badge나 Bubble 안에서는 완료 상태를 알려주는 표시로 사용해요. 직접 선택하는 체크박스와 구분하고, 크기는 상위 컴포넌트의 기준을 따라요. | `Badge` · `Check=True` / `Bubble` · `Checkbox=true` | **`L`** 30 · **`XS`** 16 |
 
 **여섯 컷이 네 사이즈를 모두 씁니다.** 크기를 고르는 것은 체크박스가 아니라 **담기는 컴포넌트**입니다.
 
