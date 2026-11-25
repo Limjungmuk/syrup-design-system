@@ -139,6 +139,10 @@
 
 > 2026-11-25 갱신: 금한돈 당첨 후기 최소 50자·최대 100자 및 후기 아이템 Size=M 반영. 아래 과거 점검 기록의 규격·건수는 당시 기준이에요.
 
+## 웹 예제의 드래그 동작 (2026-11-25)
+
+Inline·Card는 자동으로 흐르다가 마우스·터치·펜 드래그 시 현재 위치에서 정지하고, 손의 이동에 따라 실제 콘텐츠 위치가 바뀌어요. 드래그를 놓은 뒤 2초 후 해당 위치에서 자동 흐름을 이어가요. 일시정지 버튼·모션 줄이기·비활성 탭에서는 자동 재생하지 않아요. Flip에는 드래그를 적용하지 않아요. 이는 웹/React 예제의 동작이며 Figma 이미지가 직접 재생되는 것은 아니에요. React 다운로드의 useMarqueeDrag.ts·marquee-drag.js·타입 선언을 함께 사용해요.
+
 ## 가이드라인
 
 [Figma Guidelines](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11784-2005)
@@ -160,6 +164,15 @@
 - [가이드라인 2](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11784-2049)
 
 ---
+
+### 3. 후기의 길이와 사용 목적에 맞는 크기를 선택해요
+
+짧은 후기 요약은 S, 최대 100자의 금한돈 당첨 후기는 M을 사용해요. 금한돈 당첨 후기 티커는 글자 수와 관계없이 M으로 통일하고, 내용이 짧아도 카드 높이 142를 유지해요.
+
+실제 S(142×110)·M(194×142) 인스턴스를 나란히 비교해요. 두 크기는 고정 높이를 유지하며, 같은 금한돈 당첨 후기 티커 안에서 글자 수에 따라 S와 M을 섞지 않아요.
+
+- [Figma 가이드라인](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12478-514)
+- [D. 후기 크기 비교 · S / M](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12478-563)
 
 ## Usage — 사용 예제
 

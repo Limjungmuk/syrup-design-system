@@ -346,6 +346,15 @@
 
 ---
 
+### 3. 후기의 길이와 사용 목적에 맞는 크기를 선택해요
+
+짧은 후기 요약은 S, 최대 100자의 금한돈 당첨 후기는 M을 사용해요. 금한돈 당첨 후기 티커는 글자 수와 관계없이 M으로 통일하고, 내용이 짧아도 카드 높이 142를 유지해요.
+
+실제 S(142×110)·M(194×142) 인스턴스를 나란히 비교해요. 두 크기는 고정 높이를 유지하며, 같은 금한돈 당첨 후기 티커 안에서 글자 수에 따라 S와 M을 섞지 않아요.
+
+- [Figma 가이드라인](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12479-513)
+- [D. 후기 크기 비교 · S / M](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12479-538)
+
 ## 점검 필요 사항
 
 ### 1. ✅ Variant 이름 오타 수정 (2026-10-12 완료)

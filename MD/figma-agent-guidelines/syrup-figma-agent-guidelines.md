@@ -16,7 +16,7 @@
 - 사용자: OS·기기 환경 구분. 가입 자격과 구분. 당첨자: 당첨 후 정보 제출·연락·수령 대상만.
 - 일반 안내의 유저는 생략하거나 문맥에 맞게 변경. 본인 인증·명의, 고객센터·고객식별자와 승인된 고지 용어는 임의 변경 금지.
 - 개인화된 인사·경험 질문은 이름·닉네임+님을 선택적으로 사용: ‘시럽이님, 이번 미션은 어땠나요?’ 반복 금지. 이름이 없으면 임의 생성·빈 이름+님 대신 호칭 없는 문장.
-- 작성 예시: ‘고객님의 개인정보는 남기지 말아주세요’ → ‘개인정보는 남기지 말아 주세요.’ 입력 안내: ‘후기를 입력해 주세요.’
+- 작성 예시: ‘고객님의 개인정보는 남기지 말아주세요’→‘개인정보는 남기지 말아 주세요.’ 입력 안내: ‘후기를 입력해 주세요.’
 ### 날짜·시간
 최근 기록: 오늘 `14:30`, 어제 `어제`(필요 시 `어제 14:30`), 이전 올해 `11월 21일`, 다른 해 `2025년 12월 31일`. 시간 병기는 목록별 통일·공백 연결. 헤더만 M.D/YYYY.M.D(11.21/2025.11.30), 앞0·점 사이 공백·끝점 생략.
 시간은24시간제 HH:mm(09:05), 갱신도 절대 시각. 방금·n분 전은 쓰지 않아요. 날짜만 있으면 오늘/어제/날짜, 가짜00:00 금지. 그룹 제목도 오늘/어제/날짜예요.
@@ -156,41 +156,41 @@ Token|Size|Line Height|Weight|Letter Spacing
 `t1400_20_regular`|20|24|Regular (400)|-0.8
 적용 전|건수|변화
 lh 18 / ls 0|15|없음
-lh 18 / ls −0.3|7|letter-spacing → 0
+lh 18 / ls −0.3|7|letter-spacing→0
 lh AUTO / ls 0|3|line-height 18로 고정
-lh 13 / ls −0.3|2|line-height 13 → 18, letter-spacing → 0
-lh 18 / ls −0.5|1|letter-spacing → 0
+lh 13 / ls −0.3|2|line-height 13→18, letter-spacing→0
+lh 18 / ls −0.5|1|letter-spacing→0
 적용 전|건수|변화
-lh 19 / ls −0.5|2|line-height → 18
+lh 19 / ls −0.5|2|line-height→18
 lh AUTO / ls −0.5|2|line-height 18로 고정
-lh 20 / ls 0|1|line-height → 18, letter-spacing → −0.5
-lh 21 / ls −0.3|1|line-height → 18, letter-spacing → −0.5
+lh 20 / ls 0|1|line-height→18, letter-spacing→−0.5
+lh 21 / ls −0.3|1|line-height→18, letter-spacing→−0.5
 조합|파일 전체 사용|상태
 13 Bold|28곳|`t1060_13_bold` 신설
 14 Medium|6곳|`t1350_14_medium` 신설
-11 Bold|21곳|❎ 예외 — 등록하지 않음
-11 Medium|15곳|❎ 예외 — 등록하지 않음
+11 Bold|21곳|❎ 예외—등록하지 않음
+11 Medium|15곳|❎ 예외—등록하지 않음
 13 Medium|37곳|`t1360_13_medium` 신설 (2026-10-01)
 항목|값
 스펙|13 / line-height 18 / letter-spacing 0
-번호 근거|Bold 블록 `t1050`(14) → `t1060`(13) 선례를 따라 Medium 블록 `t1350`(14) → `t1360`(13)
-값 근거|기존 13px 스타일 `b500_13_regular` · `t1060_13_bold`와 동일한 램프(13 → 18)
-베리어블 바인딩|`Font family` · `Font weight` · `Font size` · `Line height` · `Letter spacing` 5개 전부
+번호 근거|Bold 블록 `t1050`(14)→`t1060`(13) 선례를 따라 Medium 블록 `t1350`(14)→`t1360`(13)
+값 근거|기존 13px 스타일 `b500_13_regular`·`t1060_13_bold`와 동일한 램프(13→18)
+베리어블 바인딩|`Font family`·`Font weight`·`Font size`·`Line height`·`Letter spacing` 5개 전부
 페이지|건수|적용 전|변화
 Bubble|12|lh AUTO / ls 0|line-height 18로 고정
-Foundation|12|lh 16 / ls −0.2|lh → 18, ls → 0 (폰트 변환 후 적용)
-Progress Stepper|9|lh 16 / ls −0.3|lh → 18, ls → 0
-Card · Grid List · Grid Scroll · Tab|각 1|lh 18 / ls 0|변화 없음
+Foundation|12|lh 16 / ls −0.2|lh→18, ls→0 (폰트 변환 후 적용)
+Progress Stepper|9|lh 16 / ls −0.3|lh→18, ls→0
+Card·Grid List·Grid Scroll·Tab|각 1|lh 18 / ls 0|변화 없음
 변환 전|→|건수|위치
 `SUIT Medium`|Pretendard Medium|12|Foundation 컬러칩 라벨
 `SF Pro Regular`|Pretendard Regular|6|❖System Components (문서 템플릿)
-`Noto Sans KR Regular`|Pretendard Regular|5|Card · Tab Bar
+`Noto Sans KR Regular`|Pretendard Regular|5|Card·Tab Bar
 `Noto Sans CJK KR Medium`|Pretendard Medium|1|Foundation weight 샘플
 `Noto Sans CJK KR Black`|Pretendard Black|1|〃
 `SF Pro Bold`|Pretendard Bold|1|❖System Components
 `Roboto Regular`|Pretendard Regular|1|List Row 런처 아이콘 플레이스홀더
 폰트|건수|용도
-`Sandoll Gyeokdonggulim Regular`|12|AD 금주머니 "10분에1금" · Grid List 캠페인 라벨
+`Sandoll Gyeokdonggulim Regular`|12|AD 금주머니 "10분에1금"·Grid List 캠페인 라벨
 `Sandoll GyeokdongGothic Regular`|1|❖Components "핫딜쇼핑" 30px 헤드라인
 #### 2-2. Text Style — Body (`b`)
 Token|Size|Line Height|Weight|Letter Spacing
@@ -310,22 +310,22 @@ Gold는 `Color/Primary_Orange`, Stamp는 원본 보라색이에요. Stamp 전환
 - 체크 완료는 Gold·Pill·활성의 M/S만 지원. 금액 대신 체크 원형이 되며 M 30×30/S 20×20이에요. 높이만 유지하고 폭은 줄어요. Stamp·Rounded·Flag·체크+비활성 조합을 임의 생성하지 않아요. 상위 컴포넌트의 완료 규칙이 없으면 확인.
 - 과거 직접 배치 0건은 금지 규칙이 아니에요.
 ### 예제 유형
-- A 기본 · 완료：`Card / News` × 2 (360 × 291.3 · 간격 16)
-- B 비활성：`Product Grid`·`Shopping` — 내부 `Grid List Item`·`Live` 2칸
-- C 작은 크기：`img_contents` × 2 (156 × 127 · 간격 8)
-- D 쇼핑 리스트：`Product Grid`·`Shopping` 4칸 (158 × 248 · 가로 12 · 세로 24)
+- A 기본·완료：`Card / News` × 2 (360 × 291.3·간격 16)
+- B 비활성：`Product Grid`·`Shopping`—내부 `Grid List Item`·`Live` 2칸
+- C 작은 크기：`img_contents` × 2 (156 × 127·간격 8)
+- D 쇼핑 리스트：`Product Grid`·`Shopping` 4칸 (158 × 248·가로 12·세로 24)
 - E 지금 탭 콘텐츠 카드：`Card / Now`·`Type=Action` (328 × 156)
 ### 규격과 속성
 - 높이 / M = 30, S = 20 (폭은 라벨 길이에 따라 HUG)
-- 활성 배경 / Gold: `Color/Primary_Orange` · Stamp: 원본 보라색. 배경 오버라이드 없이 variant 원본을 따라요.
+- 활성 배경 / Gold: `Color/Primary_Orange`·Stamp: 원본 보라색. 배경 오버라이드 없이 variant 원본을 따라요.
 - 기본 텍스트 / `Color/Gray_White`
-- 비활성 배경 / M `Color/Gray_500` · S `Color/Opacity_Black_200`
+- 비활성 배경 / M `Color/Gray_500`·S `Color/Opacity_Black_200`
 - 비활성 텍스트 / M `Color/Gray_White`, S `Color/Gray_800`. M 배경 Gray_500·흰 글자는 의도된 원본이며 보정하지 않아요.
-- 아이콘 / M 20×20 · S 15×15 (원본 포함), 라벨 좌측
-- 모서리 / Pill = 알약형 (M 20 · S 원형) · Rounded = 라운드 사각형 (4) · Flag 우하단만 6 · Check 원형
+- 아이콘 / M 20×20·S 15×15 (원본 포함), 라벨 좌측
+- 모서리 / Pill = 알약형 (M 20·S 원형)·Rounded = 라운드 사각형 (4)·Flag 우하단만 6·Check 원형
 - 패딩 (M) / 상하 5 / 좌우 10 (비활성 4 / 8)
-- 패딩 (S) / 상하 1 / 좌우 5 (Stamp 좌 `Spacing/50` 2 · `Pill` 좌우 `Spacing/150` 6)
-- 간격 / M 4 · S 1 (Stamp 0)
+- 패딩 (S) / 상하 1 / 좌우 5 (Stamp 좌 `Spacing/50` 2·`Pill` 좌우 `Spacing/150` 6)
+- 간격 / M 4·S 1 (Stamp 0)
 ## Banner
 Figma G:11204-31, U:11204-22
 ### 사용 기준
@@ -339,10 +339,10 @@ Figma G:11204-31, U:11204-22
 프로모션이나 이벤트의 주목도를 높일 때는 배경색과 텍스트 색상을 변경할 수 있어요.
 텍스트와 화살표가 배경에서 명확히 보이도록 색상을 함께 조정.
 ### 예제 유형
-- A 단독：`Banner` × 1 · `Indicator=false`
-- B 세로 나열：`Banner` × 2 · 슬롯 간격 12
-- C 캐러셀：`Banner` × 1 · `Indicator=true` 「1 / 2」
-- D 색상 강조형：`Banner` × 1 · 배경 `#ABC436` · 흰 텍스트
+- A 단독：`Banner` × 1·`Indicator=false`
+- B 세로 나열：`Banner` × 2·슬롯 간격 12
+- C 캐러셀：`Banner` × 1·`Indicator=true` 「1 / 2」
+- D 색상 강조형：`Banner` × 1·배경 `#ABC436`·흰 텍스트
 ### 규격과 속성
 - 크기 / 328 × 86 고정
 - 모서리 / `Corner radius/400` (16)
@@ -352,8 +352,8 @@ Figma G:11204-31, U:11204-22
 - 이미지–텍스트 간격 / `Spacing/100` (4)
 - 타이틀 / `t900_16_bold` / `Color/Gray_100`
 - 본문 / `b500_13_regular` / `Color/Gray_250`
-- 1. Banner — Master Component — `Image`: SLOT / 좌측 70 × 70 이미지 영역
-- 1. Banner — Master Component — `Arrow`: BOOLEAN / `true` / 우측 이동 화살표 노출
+- 1. Banner—Master Component—`Image`: SLOT / 좌측 70 × 70 이미지 영역
+- 1. Banner—Master Component—`Arrow`: BOOLEAN / `true` / 우측 이동 화살표 노출
 ## Border
 Figma G:11194-29, U:11194-22
 ### 사용 기준
@@ -369,7 +369,7 @@ Thick은 높이10의 영역 구분, Thin은1px 구분선이에요. 항목 사이
 - A 새 영역의 시작：`Border` + 묶음 1개
 - B 묶음 사이：묶음 + `Border` + 묶음
 ### 규격과 속성
-- 1. Border — Master Component — `Height`: VARIANT / `Thick` / `Thin` · `Thick`
+- 1. Border—Master Component—`Height`: VARIANT / `Thick` / `Thin`·`Thick`
 ## Bottom CTA
 Figma G:11135-24, U:11105-9486
 ### 사용 기준
@@ -397,7 +397,7 @@ Figma G:11135-24, U:11105-9486
 - 하단 여백 / `Spacing/500` (20)
 - 버튼 영역 좌우 여백 / `Spacing/400` (16)
 - Upper Item 여백 / `Spacing/600` (24)
-- 버튼 높이 · 모서리 / 56 · `Corner radius/250` (10)
+- 버튼 높이·모서리 / 56·`Corner radius/250` (10)
 - 버튼 라벨 / `t800_17_bold`
 - 주 액션 / `Color/Primary_Orange` + `Color/Gray_White`
 ## Bottom Info
@@ -437,7 +437,7 @@ ETMS가 표시된 상태에서도 안내 내용을 모두 읽을 수 있도록 �
 - I 복수 플로팅과 함께 쓰기：`Bottom Info`(하단 여백 160) + `ETMS`·`Type=Egg` (108 × 108) + `btn_timer` (194 × 40)
 ### 규격과 속성
 - 폭 / 360 (Padding=True는 내부 콘텐츠 312)
-- 배경 / `Color/Gray_950` (#F6F6F7) — `Padding=True`만
+- 배경 / `Color/Gray_950` (#F6F6F7)—`Padding=True`만
 - 여백 / 상·좌·우 24 / 하 40
 - 제목 / `t800_17_bold` / `Color/Gray_200`
 - 본문 / `b500_13_regular` / `Color/Gray_400`
@@ -445,7 +445,7 @@ ETMS가 표시된 상태에서도 안내 내용을 모두 읽을 수 있도록 �
 - 그룹 내부 간격 / `Spacing/200` (8)
 - 그룹 간 간격 / `Spacing/500` (20)
 - 제목 ↔ 본문 / `Spacing/400` (16)
-- 1. Bottom Info — Master Component — `Padding`: VARIANT / `True` / 배경·여백 포함 여부
+- 1. Bottom Info—Master Component—`Padding`: VARIANT / `True` / 배경·여백 포함 여부
 ## Bottom Sheet
 Figma G:11392-544, U:11392-545
 ### 사용 기준
@@ -463,8 +463,8 @@ Figma G:11392-544, U:11392-545
 각 행은 `Bottom Sheet / Body / Selector / Select Item`으로 구성하고, 선택한 항목만 `Checked=True`, 나머지는 `Checked=False`로 설정해요.
 선택 표시는 행 내부의 `Checkbox` (`Variant=Line`, `Size=M`, `Checked=True`, `Disabled=False`, 24×24)를 그대로 사용. 선택된 문구는 주황색으로 강조하고 오른쪽에 선형 체크를 표시. 원형 체크박스나 완료용 Badge를 별도로 덧붙이지 않아요.
 선택형 컴포넌트 참조:
-- Body 전체 이름: `Bottom Sheet / Body / Selection` · 노드 `8689:5852` · 컴포넌트 키 `07ecdabfe99197e7decb0f49910360520f3cfadf`
-- 행 전체 이름: `Bottom Sheet / Body / Selector / Select Item` · 세트 `8689:5842` · 선택 `8689:5840` / 미선택 `8689:5841`
+- Body 전체 이름: `Bottom Sheet / Body / Selection`·노드 `8689:5852`·컴포넌트 키 `07ecdabfe99197e7decb0f49910360520f3cfadf`
+- 행 전체 이름: `Bottom Sheet / Body / Selector / Select Item`·세트 `8689:5842`·선택 `8689:5840` / 미선택 `8689:5841`
 - `Body / Selection`은 위 전체 이름의 약칭이에요. `Selection`과 행 경로의 `Selector`는 실제 이름이 다르므로 같은 이름으로 정규화하지 않아요.
 - Body의 행 개수와 문구는 내용에 맞춰 구성. ‘추천순·최신순·적립금 높은순·가격 낮은순’ 예제에서는 추천순만 선택.
 - 찾지 못했을 때 `Body / List`와 별도 Badge로 대체하지 말고, 전체 이름·노드·키를 기준으로 원본을 다시 확인.
@@ -477,9 +477,9 @@ Figma G:11392-544, U:11392-545
 ### 적용 시 주의
 상황에 맞는 Body를 선택하고 제공된 구성으로 담기 어려운 내용은 Body / Slot에 자유롭게 구성. 시트 구조와 본문 좌우24를 유지. 문서 화면360×580, Dim은 전체 영역에 절대 배치.
 ### 예제 유형
-- A 약관 목록 보여주기：`Body / List` · 3줄
-- B 항목 하나 고르기：`Bottom Sheet / Body / Selection` · 행 수는 내용에 맞춤
-- C 순서대로 안내하기：`Body / Stepper` · 2단계
+- A 약관 목록 보여주기：`Body / List`·3줄
+- B 항목 하나 고르기：`Bottom Sheet / Body / Selection`·행 수는 내용에 맞춤
+- C 순서대로 안내하기：`Body / Stepper`·2단계
 - D 여러 장으로 넘겨 보기：`Body / Page`
 - E 전용 콘텐츠 구성하기：`Body / Slot`
 - F 제휴 로고 보여주기：`Body / List`의 `Logo=true` (116 × 116)
@@ -487,13 +487,13 @@ Figma G:11392-544, U:11392-545
 - H 되돌리는 행동과 함께 두기：`2 Buttons` (146 + 146)
 ### 규격과 속성
 - 폭 / 340 고정
-- 모서리 / `Corner radius/600` (24) — 네 모서리 전체
+- 모서리 / `Corner radius/600` (24)—네 모서리 전체
 - 배경 / `Color/Gray_White`
-- 좌우 여백 / `Spacing/600` (24) · 버튼 영역만 `Spacing/500` (20)
+- 좌우 여백 / `Spacing/600` (24)·버튼 영역만 `Spacing/500` (20)
 - 타이틀 / `t600_21_bold` / `Color/Gray_100`
 - 보조 설명 / `b300_15_regular` / `Color/Gray_400`
 - 본문 목록 / `b200_16_regular`
-- 버튼 / 높이 56 · `Corner radius/250`(10) · `t800_17_bold`
+- 버튼 / 높이 56·`Corner radius/250`(10)·`t800_17_bold`
 - 주 액션 / `Color/Primary_Orange` + `Color/Gray_White`
 - 보조 액션 / `Color/Gray_900` + `Color/Gray_200`
 ## Bubble
@@ -511,21 +511,21 @@ Top은 꼬리가 위쪽, Bottom은 아래쪽에 있으며, Align은 꼬리의 �
 ### 적용 시 주의
 금 받기 전에는 Gold=True·Checkbox=False, 수령 완료 후에는 Gold=False·Checkbox=True로 바꿔요.
 ### 예제 유형
-- A 행동 유도：`Switch` · `Check=On`
+- A 행동 유도：`Switch`·`Check=On`
 - B 실행 전 조건 안내：`Button` (`Icon=true` 「2배 받기」)
-- C 리워드 안내 · 적립 완료：`Button` 296 (「시럽 쿠팡가기」) 2단
-- D 상태와 횟수 안내：`Button` (`Variant=Weak` · `Disabled=True` 「정답」)
+- C 리워드 안내·적립 완료：`Button` 296 (「시럽 쿠팡가기」) 2단
+- D 상태와 횟수 안내：`Button` (`Variant=Weak`·`Disabled=True` 「정답」)
 - E 변화 안내：금 시세 수치 묶음 (`3.223원 (+0.2%)`)
 ### 규격과 속성
 - 폭 / 라벨 길이에 따라 HUG
-- 높이 / S 31(1줄) · 41(2줄) / M 38(1줄) · 56(2줄)
-- 배경 · 꼬리 / `Color/Gray_200` (#464646)
+- 높이 / S 31(1줄)·41(2줄) / M 38(1줄)·56(2줄)
+- 배경·꼬리 / `Color/Gray_200` (#464646)
 - 텍스트 / `Color/Gray_White`
-- 모서리 / S `Corner radius/250`(10) · M `Corner radius/300`(12)
-- 여백 / S 6 / 10 · M 8 / 12
-- 꼬리 들여쓰기 / `Spacing/400` (16) — 전 variant 공통
-- 1. Bubble — Master Component — `Placement`: VARIANT / `Top` / `Top` · `Bottom` / 꼬리가 위/아래 중 어디에 붙는지
-- 1. Bubble — Master Component — `Align`: VARIANT / `Left` / `Left` · `Center` · `Right` / 꼬리의 수평 위치
+- 모서리 / S `Corner radius/250`(10)·M `Corner radius/300`(12)
+- 여백 / S 6 / 10·M 8 / 12
+- 꼬리 들여쓰기 / `Spacing/400` (16)—전 variant 공통
+- 1. Bubble—Master Component—`Placement`: VARIANT / `Top` / `Top`·`Bottom` / 꼬리가 위/아래 중 어디에 붙는지
+- 1. Bubble—Master Component—`Align`: VARIANT / `Left` / `Left`·`Center`·`Right` / 꼬리의 수평 위치
 ## Button
 Figma G:11830-7493, U:11830-7494
 ### 사용 기준
@@ -561,15 +561,15 @@ Figma G:11830-7493, U:11830-7494
 - J. 읽기 진행과 보상 수령
 - K. 알림 설정 상태
 ### 규격과 속성
-- 높이 / XS 26 · S 30 · M 38 · L 48 · XL 56
-- 상하 Padding / `Spacing/50` (2) — 전 사이즈 공통
-- 모서리 / XS·S·M `Corner radius/150`(6) · L·XL `Corner radius/250`(10)
+- 높이 / XS 26·S 30·M 38·L 48·XL 56
+- 상하 Padding / `Spacing/50` (2)—전 사이즈 공통
+- 모서리 / XS·S·M `Corner radius/150`(6)·L·XL `Corner radius/250`(10)
 - 테두리 / 1
 - 주 액션 / `Color/Primary_Orange` + `Color/Gray_White`
 - 보조 액션 / `Color/Gray_900` + `Color/Gray_200`
 - 비활성 (Fill) / `Color/Gray_600` 배경
-- 비활성 (Weak · Outline) / 배경 유지 + 라벨 `Color/Gray_600`
-- Checked=True · 처리 후 / `Color/Gray_White` 배경 + `Color/Primary_Orange` 라벨
+- 비활성 (Weak·Outline) / 배경 유지 + 라벨 `Color/Gray_600`
+- Checked=True·처리 후 / `Color/Gray_White` 배경 + `Color/Primary_Orange` 라벨
 ## Card
 Figma G:11849-7548, U:11849-7549
 ### 사용 기준
@@ -592,31 +592,31 @@ Image=False는 배경색 등을 확인하기 위한 옵션으로, 실제 화면�
 Summary SG02=적립 예정·완료 요약, OPS03_01=만료 예정. My의 State BOOLEAN은 Disabled의 추가 안내용이며 선택 상태가 아니에요.
 ### 예제 유형
 - A. 콘텐츠와 리워드 안내：`Card / News`
-- B. 순위가 있는 콘텐츠：`Card / Now · Ranking`
+- B. 순위가 있는 콘텐츠：`Card / Now·Ranking`
 - C. 단계별 참여 안내：`Card / Todo / Step`
-- D. 수치 요약：`Card / Summary · SG02`
-- E. 만료 예정 안내：`Card / Summary · OPS03_01`
+- D. 수치 요약：`Card / Summary·SG02`
+- E. 만료 예정 안내：`Card / Summary·OPS03_01`
 - F. 순위와 추가 행동：`Card / Invite / Ranking`
-- G. 초대 코드와 내역：`Card / Invite / Code · Default`
+- G. 초대 코드와 내역：`Card / Invite / Code·Default`
 - H. 정보 입력과 완료 상태：`Card / Tax`
-- I. 결과와 참여 방법：`Card / Thunderbolt · Default / Step`
-- J. 금과 스탬프 현황：`Card / Shopping · Gold / Stamp`
-- K. 두 상품 비교：`Card / Stamp · Grid`
-- L. 여러 상품 비교：`Card / Stamp · Compare`
+- I. 결과와 참여 방법：`Card / Thunderbolt·Default / Step`
+- J. 금과 스탬프 현황：`Card / Shopping·Gold / Stamp`
+- K. 두 상품 비교：`Card / Stamp·Grid`
+- L. 여러 상품 비교：`Card / Stamp·Compare`
 - M. 혜택 조건과 받기：`Card / Shopping / Naver`
 - N. 차트로 수치 비교：`Card / Chart`
 - O. 표로 수치 비교：`Card / Table`
-- P. 선택과 이용 조건：`Card / My · Selected / Default / Disabled`
+- P. 선택과 이용 조건：`Card / My·Selected / Default / Disabled`
 ### 규격과 속성
-- 카드 폭 / 326 / 328이 표준 · 312(Invite·Tax) · 320(News·AD·Naver) · 360(SA)
-- 라운드 / `Corner radius/400`(16) 가 기본 · `r300`(12) · `r250`(10) · `r200`(8)
-- 테두리 / `Color/Gray_850` 1px이 기본 · `Gray_900` · `Gray_800` · 선택 시 `Primary_Orange`
-- 배경 / `Color/Gray_White` · 비활성 `Color/Gray_950`
-- 패딩 / `Spacing/500`(20) 또는 `Spacing/600`(24)이 가장 흔함 · 좌우 `Spacing/400`(16)도 사용
-- 간격 / `Spacing/500`(20) · `Spacing/400`(16) · `Spacing/300`(12)
+- 카드 폭 / 326 / 328이 표준·312(Invite·Tax)·320(News·AD·Naver)·360(SA)
+- 라운드 / `Corner radius/400`(16) 가 기본·`r300`(12)·`r250`(10)·`r200`(8)
+- 테두리 / `Color/Gray_850` 1px이 기본·`Gray_900`·`Gray_800`·선택 시 `Primary_Orange`
+- 배경 / `Color/Gray_White`·비활성 `Color/Gray_950`
+- 패딩 / `Spacing/500`(20) 또는 `Spacing/600`(24)이 가장 흔함·좌우 `Spacing/400`(16)도 사용
+- 간격 / `Spacing/500`(20)·`Spacing/400`(16)·`Spacing/300`(12)
 - 레이아웃 / 대부분 세로 오토레이아웃, 요약형은 가로
 - `b400_14_regular` / 본문 (가장 많음)
-- `t1000_15_bold` · `t800_17_bold` / 카드 제목
+- `t1000_15_bold`·`t800_17_bold` / 카드 제목
 ## Checkbox
 Figma G:11452-3525, U:11452-3240
 ### 사용 기준
@@ -634,17 +634,17 @@ Circle과 Line을 제공해요. Line은 미선택에도 흐린 체크가 남아�
 - C 카드형 선택：`Card / My` × 2 (`Selected` ↔ `Default`)
 - D 간결한 선택 목록：`Bottom Sheet / Body / Selector / Select Item` × 2
 - E 할 일 상태：`List Row / Todo / Task` × 3
-- F 완료 표시：`Badge` · `Check=True` / `Bubble` · `Checkbox=true`
+- F 완료 표시：`Badge`·`Check=True` / `Bubble`·`Checkbox=true`
 ### 규격과 속성
-- 크기 / XS 16 · S 20 · M 24 · L 30 (정사각)
+- 크기 / XS 16·S 20·M 24·L 30 (정사각)
 - 테두리 두께 / 1 (전 사이즈 고정, `Circle`+미선택만)
 - 선택 / `Color/Primary_Orange`
 - 미선택 / `Color/Gray_700`
 - 비활성 / `Color/Gray_850` (`Line`+`Checked=True`만 opacity 30%, 의도된 예외)
 - 체크마크 (Circle) / `Color/Gray_White`
 - 레이아웃 / 오토레이아웃 없음, 고정 크기
-- 1. Checkbox — Master Component — `Variant`: VARIANT / `Circle` / `Line` · `Circle`
-- 1. Checkbox — Master Component — `Size`: VARIANT / `XS` / `XS` · `S` · `M` · `L`
+- 1. Checkbox—Master Component—`Variant`: VARIANT / `Circle` / `Line`·`Circle`
+- 1. Checkbox—Master Component—`Size`: VARIANT / `XS` / `XS`·`S`·`M`·`L`
 ## Chip
 Figma G:11499-2170, U:11499-1889
 ### 사용 기준
@@ -664,12 +664,12 @@ Figma G:11499-2170, U:11499-1889
 현재 탭 안의 콘텐츠를 바꾸는 경우에는 이동 아이콘을 표시하지 않아요.
 별도 페이지로 이동하는 칩에는 Icon=True를 적용해 이동 방식을 구분.
 ### 예제 유형
-- A 콘텐츠 분류 선택：`Chip / Action` `Kind=Select` · `Wrap=False`
-- B 추천 검색어 실행：`Chip / Action` `Kind=Action` · `Wrap=True`
-- C 배경 위의 추천 검색어：`Chip / Action` `Kind=Action2` · `Wrap=True`
+- A 콘텐츠 분류 선택：`Chip / Action` `Kind=Select`·`Wrap=False`
+- B 추천 검색어 실행：`Chip / Action` `Kind=Action`·`Wrap=True`
+- C 배경 위의 추천 검색어：`Chip / Action` `Kind=Action2`·`Wrap=True`
 - D 카테고리·조건 선택：`Chip / Filter` `Type=Category` 2행
 - E 요일 선택：`Chip / Filter` `Type=Day`
-- F 빠른 값 입력：`Chip / Action` `Kind=Action3` · `Wrap=False`
+- F 빠른 값 입력：`Chip / Action` `Kind=Action3`·`Wrap=False`
 ### 규격과 속성
 - 칩 높이 / 40 (`minHeight`) / 32 (`minHeight` + FIXED)
 - 좌우 패딩 / `Spacing/300` (12) / `Spacing/300` (12)
@@ -685,7 +685,7 @@ Figma G:11514-3066, U:11514-2428
 ### 사용 기준
 1. 화면 중앙에 Dialog를 배치하고 Dim을 함께 사용해요
 화면 배경은 흰색으로 두고, 전체 영역을 덮는 Dim 위에 Dialog를 가로·세로 중앙 정렬해요.
-레이어는 화면 → Dim → Dialog 순서로 배치해 뒤 화면과 명확하게 구분.
+레이어는 화면→Dim→Dialog 순서로 배치해 뒤 화면과 명확하게 구분.
 2. 보상을 받는 팝업에는 보상 이미지를 사용해요
 금이나 쿠폰 등 받는 대상의 이미지를 팝업 상단에 배치. 금은 기존 컴포넌트의 Lottie 영역을 사용.
 현재 예제는 금 수령 사례이며, 쿠폰을 제공하는 경우에는 해당 쿠폰 이미지를 사용.
@@ -701,7 +701,7 @@ Figma G:11514-3066, U:11514-2428
 - A 간단한 안내
 - B 행동 확인
 - C 설정·업데이트 안내
-- D 상세 안내：유의 사항 4줄 · `Body Text=false`
+- D 상세 안내：유의 사항 4줄·`Body Text=false`
 - E 정보 입력
 - F 항목 선택：`Checkbox` 3줄 (Npay 아이디)
 - G 공유 방법 선택
@@ -714,7 +714,7 @@ Figma G:11514-3066, U:11514-2428
 - 모서리 / `Corner radius/400` (16)
 - 배경 / `Color/Gray_White`
 - 좌우 여백 / `Spacing/500` (20)
-- 상단 여백 / `Spacing/1100` (44) — 이미지가 걸쳐 나오는 구조
+- 상단 여백 / `Spacing/1100` (44)—이미지가 걸쳐 나오는 구조
 - 타이틀 / `t600_21_bold` / `Color/Gray_100` / 최대 2줄 30자
 - 본문 / `b300_15_regular` / `Color/Gray_200` / 간결하게
 - 주 액션 / `Color/Primary_Orange` 배경 + `Color/Gray_White` 라벨
@@ -725,7 +725,7 @@ Figma G:11530-302, U:11530-303
 1. 화면 전체를 덮도록 사용해요
 Dim은 뒤 화면 전체를 덮도록 배치. 헤더나 하단 영역이 일부 남지 않도록 해요.
 2. 팝업 아래에 한 번만 배치해요
-화면 → Dim → Dialog 또는 Bottom Sheet 순서로 배치. Dim이 중복되어 배경이 지나치게 어두워지지 않도록 해요.
+화면→Dim→Dialog 또는 Bottom Sheet 순서로 배치. Dim이 중복되어 배경이 지나치게 어두워지지 않도록 해요.
 ### 예제 유형
 - A Dialog：`Dialog` 288 × 182
 - B Bottom Sheet：`Bottom Sheet` 340 × 326
@@ -753,21 +753,21 @@ Figma G:11857-5530, U:11857-5531
 ### 적용 시 주의
 가이드1 아이콘형과 예제A는 Variant=Top(8945:10808), 예제B는My예요. Last=True는 각 행 마지막 열의 오른쪽 구분선만 숨기며 선택·완료 상태가 아니에요.
 ### 예제 유형
-- A. 주요 메뉴：`Grid List · Variant=Top`
-- B. 보유 내역 메뉴：`Grid List · Variant=My`
-- C. 여러 혜택 메뉴：`Grid List · Variant=혜택모음`
-- D. 설명이 있는 카드：`Grid List · Variant=더많이모으기`
-- E. 리워드 받기 카드：`Grid List · Variant=참여하고모으기`
+- A. 주요 메뉴：`Grid List·Variant=Top`
+- B. 보유 내역 메뉴：`Grid List·Variant=My`
+- C. 여러 혜택 메뉴：`Grid List·Variant=혜택모음`
+- D. 설명이 있는 카드：`Grid List·Variant=더많이모으기`
+- E. 리워드 받기 카드：`Grid List·Variant=참여하고모으기`
 - F. 할 일과 기록 횟수：`Grid List / Todo`
 - G. 금융기관 선택：`Grid List / Bank`
 ### 규격과 속성
-- 묶음 폭 / 328 (본문 영역) · 360 (화면 전체 폭)
+- 묶음 폭 / 328 (본문 영역)·360 (화면 전체 폭)
 - 카드 라운드 / `Corner radius/400` (16)
 - 카드 테두리 / `Color/Gray_850` 1px
 - 카드 배경 / `Color/Gray_White`
 - 아이콘 간격 / `Spacing/200` (8)
 - 아이콘–라벨 간격 / `Spacing/150` (6)
-- 좌우 여백 / `Spacing/600` (24) — 360 폭 기준
+- 좌우 여백 / `Spacing/600` (24)—360 폭 기준
 - 배지 / 20 × 20 원형 (`Primary_Orange` / `Secondary_Red`)
 - `t1360_13_medium` / 메뉴 라벨
 - `t1000_15_bold` / 카드 제목
@@ -775,27 +775,23 @@ Figma G:11857-5530, U:11857-5531
 Figma G:11540-1870, U:11540-1871
 ### 사용 기준
 1. 콘텐츠에 맞는 유형을 사용해요
-이동할 메뉴는 Icon, 시간대별 참여는 Live를 사용. 현재 금한돈 당첨 후기는 Ticker / Marquee / Card에서 후기 아이템 Size=M을 사용하며 Grid Scroll / Winner 묶음은 사용하지 않아요.
-화면 폭을 넘는 항목은 가로로 탐색하고, 아이템 크기와 간격은 각 컴포넌트의 기본 구성을 유지.
+메뉴 이동은 Icon, 시간대별 참여는 Live. 가로 탐색 시 기본 크기·간격을 유지. Winner는 현재 미사용이며 금한돈 당첨 후기는 Ticker의 M으로 구성해요.
 2. 참여 상태에 맞춰 Live를 사용해요
-참여 가능은 Available, 참여 완료는 Completed, 시작 전은 Upcoming, 종료 후는 Ended를 사용.
-시간과 참여 여부에 맞는 상태를 선택하고, 참여할 수 없는 상태를 참여 가능한 버튼으로 표시하지 않아요.
+Available 참여 가능, Completed 완료, Upcoming 시작 전, Ended 종료. 실제 시간·참여 상태와 버튼을 일치시켜요.
+3. 후기의 길이와 사용 목적에 맞는 크기를 선택해요
+짧은 일반 후기 요약은 S. 금한돈 당첨 후기 티커는 50~100자 모두 M으로 통일하며 S/M을 섞지 않아요. 고정 높이를 유지해요.
 ### 적용 시 주의
-후기 아이템 세트12450:4229(현재 원본 이름 Grid Scroll)에 Size=S/M을 제공. S는142×110·본문폭118·최대4줄/64, M은194×142고정·본문폭170·최대7줄/112. 공통13 Regular/행간16·패딩12·Gap4·라운드8, textTruncation=ENDING·textAutoResize=HEIGHT. 닉네임·날짜와 본문 제한을 구분해요. 금한돈 당첨 후기는 최소50자·최대100자이며 현재 Ticker에서 M을 사용. 줄바꿈으로7줄을 넘으면 말줄임될 수 있고 글자 수 제한과 표시 줄 수는 별개예요.
+후기 세트12450:4229의 현재 이름은 Grid Scroll(기존 Grid Scroll / Scroll Item / Review). Size=S142×110·본문폭118·최대4줄/64, M194×142고정·본문폭170·최대7줄/112. 공통13 Regular/행간16·패딩12·Gap4·라운드8, textTruncation=ENDING·textAutoResize=HEIGHT. 닉네임·날짜는 별도. 금한돈 당첨 후기 최소50자·최대100자는 입력 기준이며 표시 줄 수와 구분. 테스트100자 문구는 실제 당첨자 인용이 아니에요.
 ### 예제 유형
-- A 쇼핑 메뉴 탐색：`Grid Scroll / Icon` · `Variant=Shopping`
-- B 시간대별 참여：`Grid Scroll / Live`
-- C 기존 당첨 후기 구조 참고：`Grid Scroll / Winner` · 현재 미사용, 신규 서비스 적용은 Ticker의 M 기준
+- A 쇼핑 메뉴 탐색：Grid Scroll / Icon·Variant=Shopping
+- B 시간대별 참여：Grid Scroll / Live
+- C 기존 Winner 구성 참고：현재 미사용
+- D 후기 크기 비교·S/M：12479:538, 가이드3：12479:513
 ### 규격과 속성
-- 마스터 폭 / 598~664 (화면 밖으로 넘치는 스크롤 영역)
-- 마스터 높이 / 110~116
-- 아이콘 / 56 × 56
-- 아이콘–라벨 간격 / `Spacing/150` (6)
-- 아이템 간격 / `Spacing/500`(20) · `Spacing/250`(10) · `Spacing/200`(8)
-- 카드 Radius / `Corner radius/400`(16) · `Corner radius/300`(12) · `Corner radius/200`(8)
-- 선택 강조 / `Color/Primary_Orange` 1px 테두리
-- 비활성 / `Color/Gray_900` 배경 + `Color/Gray_600` 글자
-- `t1360_13_medium` / 아이콘 라벨
+- 스크롤 묶음 폭598~664·높이110~116. 후기 Size는 위 표기 적용.
+- 아이콘56×56·아이콘/라벨Gap6
+- 아이템Gap20/10/8·카드Radius16/12/8
+- 선택 강조Primary_Orange1px
 ## Header
 Figma G:11546-689, U:11546-690
 ### 사용 기준
@@ -817,17 +813,17 @@ Figma G:11546-689, U:11546-690
 - D. 적립 문의
 - E. 시간·적립 상태
 - F. 할 일
-- G. 타이틀 표시 · 레거시
+- G. 타이틀 표시·레거시
 ### 규격과 속성
 - 헤더 높이 / 55 (`Todo`만 57)
 - 헤더 폭 / 360 (화면 전체)
 - 상하 패딩 / 9.5 (토큰 밖)
-- 좌 패딩 / `Back` 8 · `Close` · `Todo` 16
-- 우 패딩 / `Back` 16~20 · `Close` 12 · `Todo` 16
+- 좌 패딩 / `Back` 8·`Close`·`Todo` 16
+- 우 패딩 / `Back` 16~20·`Close` 12·`Todo` 16
 - 배경 / `Color/Gray_White` (`Theme=Dark`는 없음)
 - 제목 / `t1400_20_regular` (20 / 24 / −0.8)
 - 아이콘 / 36 × 36 (`Plus` 32), 획 1.8
-- 아이콘 색 / `Light` `Color/Gray_100` · `Dark` `Color/Gray_White`
+- 아이콘 색 / `Light` `Color/Gray_100`·`Dark` `Color/Gray_White`
 ## Icon Button
 Figma G:11556-4584, U:11556-4585
 ### 사용 기준
@@ -853,15 +849,15 @@ Info는 S(16)·M(20)·L(24), Refresh는 S(20)·M(24)를 제공해요.
 - D. 화면 위 플로팅
 - E. 하단 광고 위 플로팅
 ### 규격과 속성
-- 크기 / Info 16·20·24 · Refresh 20·24 · Floating 40
+- 크기 / Info 16·20·24·Refresh 20·24·Floating 40
 - 라운드 / `Corner radius/circle` (Info만 0)
 - 배경 / `Color/Gray_White` (3종 공통)
-- 테두리 / Refresh `Color/Gray_800` 1px · Floating `Color/Gray_700` 1px
-- 그림자 / `#000000` 14% · blur 5 · offset(0, 2) — Refresh `Shadow=True`만
+- 테두리 / Refresh `Color/Gray_800` 1px·Floating `Color/Gray_700` 1px
+- 그림자 / `#000000` 14%·blur 5·offset(0, 2)—Refresh `Shadow=True`만
 - 텍스트 / `c200_11_regular` + `Color/Gray_400`
-- 좌우 패딩 / `Spacing/200` (8) — Refresh `Text=True`만
-- 1. Icon Button / Refresh — `Size`: VARIANT / `S` / `S` · `M`
-- 1. Icon Button / Refresh — `Text`: VARIANT / `False` / `False` · `True`
+- 좌우 패딩 / `Spacing/200` (8)—Refresh `Text=True`만
+- 1. Icon Button / Refresh—`Size`: VARIANT / `S` / `S`·`M`
+- 1. Icon Button / Refresh—`Text`: VARIANT / `False` / `False`·`True`
 ## Indicator
 Figma G:11569-4259, U:11569-4260
 ### 사용 기준
@@ -884,15 +880,15 @@ Figma G:11569-4259, U:11569-4260
 - D. 참여 횟수 안내
 - E. 문구와 함께 수량 안내
 ### 규격과 속성
-- 점 크기 · 간격 / 6 × 6 · `Spacing/150` (6)
-- 현재 위치 강조 / `Color/Gray_Black` (밝은 배경) · `Color/Gray_White` (어두운 배경)
-- 비활성 / `Color/Gray_500` · `Color/Gray_750`
+- 점 크기·간격 / 6 × 6·`Spacing/150` (6)
+- 현재 위치 강조 / `Color/Gray_Black` (밝은 배경)·`Color/Gray_White` (어두운 배경)
+- 비활성 / `Color/Gray_500`·`Color/Gray_750`
 - 배경 (어두움) / `Color/Opacity_Black_300` (25%)
 - 배경 (밝음) / `Color/Gray_950`
-- 패딩 / `Spacing/200` (8) — `Padding=True`만
-- 타이포 (M) / `b300_15_regular` · `t1000_15_bold`
-- 1. Indicator — Master Component — `Type`: VARIANT / `Dot` / `Dot` · `Number` · `Number_Background`
-- .primitive / Indicator / Dot — `White`: VARIANT / `False` / `False` · `True`
+- 패딩 / `Spacing/200` (8)—`Padding=True`만
+- 타이포 (M) / `b300_15_regular`·`t1000_15_bold`
+- 1. Indicator—Master Component—`Type`: VARIANT / `Dot` / `Dot`·`Number`·`Number_Background`
+- .primitive / Indicator / Dot—`White`: VARIANT / `False` / `False`·`True`
 ## Keypad
 Figma G:11577-274, U:11577-275
 ### 사용 기준
@@ -913,7 +909,7 @@ Figma G:11577-274, U:11577-275
 - B. 수량 입력
 ### 규격과 속성
 - 키패드 폭 / 360 (화면 전체)
-- 버튼 크기 / 109 × 63 (마스터 안) · 120 × 63 (컴포넌트셋)
+- 버튼 크기 / 109 × 63 (마스터 안)·120 × 63 (컴포넌트셋)
 - 격자 / 4행 × 3열, 간격 0
 - 좌우 여백 / `Spacing/400` (16)
 - 영역 간격 / `Spacing/400` (16)
@@ -943,13 +939,13 @@ Metric은 S의 축약 표기와 M의 전체 항목명을 구분하고, 같은 �
 ### 규격과 속성
 - 태그 배경 / `Color/Gray_950` (#F6F6F7)
 - 태그 라운드 / `Corner radius/150` (6)
-- 태그 패딩 / 상하 `Spacing/100`(4) · 좌우 `Spacing/150`(6)
+- 태그 패딩 / 상하 `Spacing/100`(4)·좌우 `Spacing/150`(6)
 - 태그 간격 / `Spacing/100` (4)
 - Metric 점 / 5 × 5 원형, 항목별 색 구분
-- Metric 간격 / 가로 `Spacing/250`(10) · 세로 `Spacing/150`(6)
+- Metric 간격 / 가로 `Spacing/250`(10)·세로 `Spacing/150`(6)
 - 본문 색 / `Color/Gray_100`
 - 보조 색 / `Color/Gray_400`
-- `c100_12_regular` / 태그 `S` · Metric 라벨(Stacked)
+- `c100_12_regular` / 태그 `S`·Metric 라벨(Stacked)
 ## List Footer
 Figma G:11589-5306, U:11589-5307
 ### 사용 기준
@@ -968,15 +964,15 @@ List Footer는 추가로 확인할 목록의 마지막 항목 아래에 배치.
 - C. 상품 목록 더보기
 - D. 이전 내역 보기
 ### 규격과 속성
-- 크기 / 기준 360×64 · 관련 목록 폭에 맞춤 · 높이 HUG
+- 크기 / 기준 360×64·관련 목록 폭에 맞춤·높이 HUG
 - 상하 패딩 / 22.5
 - 배경 / `Color/Gray_White`
 - 경계 / `Color/Gray_900` 상단 1px만
 - 라벨 / `t1300_15_medium` + `Color/Gray_200`
-- 화살표 / `Icon / Arrow` · S(16) · 추가 로딩 Down / 페이지 이동 Right
+- 화살표 / `Icon / Arrow`·S(16)·추가 로딩 Down / 페이지 이동 Right
 - 정렬 / 가로·세로 중앙
-- 1. List Footer — Master Component — `Text#8457:30`: TEXT / `더보기`
-- 1. List Footer — Master Component — `Arrow#9796:1`: BOOLEAN / `true`
+- 1. List Footer—Master Component—`Text#8457:30`: TEXT / `더보기`
+- 1. List Footer—Master Component—`Arrow#9796:1`: BOOLEAN / `true`
 ## List Header
 Figma G:11594-6661, U:11594-6662
 ### 사용 기준
@@ -985,7 +981,7 @@ Figma G:11594-6661, U:11594-6662
 2. 중요한 정보는 컬러로 강조할 수 있어요
 필요한 단어·수치만 기존 컬러 토큰으로 강조해요. 검색 결과 굵기 규칙과 별개예요.
 3. 새로운 내용은 제목 옆 N 뱃지로 안내해요
-Title Acc=True → Type=Badge → Badge Type=New. N은 새로운 내용이며 수량·완료가 아니에요. 간격4·뱃지20×20을 유지하고 불필요하면 Title Acc를 꺼요.
+Title Acc=True→Type=Badge→Badge Type=New. N은 새로운 내용이며 수량·완료가 아니에요. 간격4·뱃지20×20을 유지하고 불필요하면 Title Acc를 꺼요.
 4. 부가 정보와 기능은 목적에 맞게 선택해요
 제목 옆 안내와 오른쪽 기준시각·광고·갱신 기능을 구분. 날짜는 공통 Writing을 따라요.
 5. 부모 영역과 제목의 좌우 여백을 맞춰요
@@ -1003,18 +999,18 @@ Title Acc=True → Type=Badge → Badge Type=New. N은 새로운 내용이며 �
 - F. 날짜·알림 기능
 - G. 여러 줄 제목
 - H. 텍스트 버튼
-- I. 검색 결과 제목 · Padding=0
-- J. 새로운 내용 안내 · N
+- I. 검색 결과 제목·Padding=0
+- J. 새로운 내용 안내·N
 ### 규격과 속성
-- 폭 / 기준 360 · 부모 영역과 콘텐츠 폭에 맞춤
-- 높이 / 기본 샘플 24 / 47 · 여러 줄 제목은 내용에 맞춰 증가
-- 좌우 패딩 / `0` · `Spacing/200`(8) · `Spacing/600`(24) 중 선택
+- 폭 / 기준 360·부모 영역과 콘텐츠 폭에 맞춤
+- 높이 / 기본 샘플 24 / 47·여러 줄 제목은 내용에 맞춰 증가
+- 좌우 패딩 / `0`·`Spacing/200`(8)·`Spacing/600`(24) 중 선택
 - 상하 패딩 / 0
 - 제목–보조설명 간격 / `Spacing/100` (4)
 - 제목–Acc 간격 / `Spacing/100` (4)
 - 배경 / 없음 (`Sub Text` primitive만 `Gray_White`)
-- 제목 / `S` `t800_17_bold` · `M` `t700_19_bold` + `Color/Gray_100`
-- 보조설명 / `S` `b500_13_regular` · `M` `b300_15_regular` + `Color/Gray_400`
+- 제목 / `S` `t800_17_bold`·`M` `t700_19_bold` + `Color/Gray_100`
+- 보조설명 / `S` `b500_13_regular`·`M` `b300_15_regular` + `Color/Gray_400`
 ## List Row
 Figma G:11867-6849, U:11867-6850
 ### 사용 기준
@@ -1037,28 +1033,28 @@ Figma G:11867-6849, U:11867-6850
 Task는 Completed=True/False, Todo / Task는 State=Default/Completed/Disabled, Todo / Selection은 State=Default/Selected/Navigation이에요. History N=OPS03_1, O=RC01. 예제 간격16을 실제 목록 공통값으로 확대하지 않아요.
 ### 예제 유형
 - A. 현재 할 일 안내：`List Row / Now`
-- B. 리워드와 바로가기：`List Row / Every Day · Type=Default / Link`
-- C. 미션 참여：`List Row / Mission · 2 Line=False / True`
-- D. 퀴즈 참여와 결과：`List Row / Quiz · Open / Pending / Result / Correct / Incorrect / Upcoming`
-- E. 참여 완료 표시：`List Row / Task · Check-In / Personality Test / Golden Time`
-- F. 할 일의 실행 상태：`List Row / Todo / Task · Default / Completed / Disabled`
-- G. 할 일 선택과 이동：`List Row / Todo / Selection · Default / Selected / Navigation`
+- B. 리워드와 바로가기：`List Row / Every Day·Type=Default / Link`
+- C. 미션 참여：`List Row / Mission·2 Line=False / True`
+- D. 퀴즈 참여와 결과：`List Row / Quiz·Open / Pending / Result / Correct / Incorrect / Upcoming`
+- E. 참여 완료 표시：`List Row / Task·Check-In / Personality Test / Golden Time`
+- F. 할 일의 실행 상태：`List Row / Todo / Task·Default / Completed / Disabled`
+- G. 할 일 선택과 이동：`List Row / Todo / Selection·Default / Selected / Navigation`
 - H. 등록한 할 일 관리：`List Row / Todo / Management`
-- I. 순위와 리워드：`List Row / Ranking · Rank=1 / 2 / 3 / 4 · Me`
+- I. 순위와 리워드：`List Row / Ranking·Rank=1 / 2 / 3 / 4·Me`
 - J. 실적 순위：`List Row / Report / Ranking`
-- K. 발표와 당첨 상태：`List Row / Status · Upcoming / Winner / Not Winner / Not Entered`
+- K. 발표와 당첨 상태：`List Row / Status·Upcoming / Winner / Not Winner / Not Entered`
 - L. 쇼핑 적립 안내：`List Row / Shopping / Gold`
 - M. 이름과 값：`List Row / Value`
-- N. 상세 내역：`List Row / History · Type=OPS03_1`
-- O. 참여 내역：`List Row / History · Type=RC01`
+- N. 상세 내역：`List Row / History·Type=OPS03_1`
+- O. 참여 내역：`List Row / History·Type=RC01`
 - P. 프로모션 안내：`List Row / Coupon / Promotion`
 ### 규격과 속성
-- 행 폭 / 328이 표준 · 312 · 326 · 360
+- 행 폭 / 328이 표준·312·326·360
 - 행 높이 / 43~68 (History는 19~136)
-- 좌우 패딩 / `Spacing/500`(20) · `Spacing/600`(24) · `Spacing/400`(16)
-- 간격 / `Spacing/250`(10) · `Spacing/400`(16) · `Spacing/500`(20)
-- 라운드 / `Corner radius/400`(16) · `Corner radius/300`(12)
-- 구분선 / 하단 1px — `Color/Gray_850` 또는 `Color/Gray_900`
+- 좌우 패딩 / `Spacing/500`(20)·`Spacing/600`(24)·`Spacing/400`(16)
+- 간격 / `Spacing/250`(10)·`Spacing/400`(16)·`Spacing/500`(20)
+- 라운드 / `Corner radius/400`(16)·`Corner radius/300`(12)
+- 구분선 / 하단 1px—`Color/Gray_850` 또는 `Color/Gray_900`
 - 강조 테두리 / `Color/Primary_Orange` 1px
 - 기본 테두리 / `Color/Gray_850` 1px
 - 배경 / `Color/Gray_White` 또는 없음
@@ -1075,13 +1071,13 @@ Figma G:11601-444, U:11601-445
 - B. 상단 메뉴 아래 로딩
 - C. 제목 아래 로딩
 ### 규격과 속성
-- 크기 / `S` 16 × 16 · `M` 20 × 20
+- 크기 / `S` 16 × 16·`M` 20 × 20
 - 색 / `Color/Primary_Orange` (점 2개)
-- 배경 · 테두리 · 라운드 / 없음
+- 배경·테두리·라운드 / 없음
 - 효과 / 없음 (그림자·블러 없음)
-- 애니메이션 / 키프레임 3장 (점 크기 7 → 20 → 7)
-- 1. Loader — Master Component — `Size`: VARIANT / `S` / `S` · `M`
-- 2. Child Item — Loader / Lottie — `Property 1`: VARIANT / `1` / `1` · `2` · `3`
+- 애니메이션 / 키프레임 3장 (점 크기 7→20→7)
+- 1. Loader—Master Component—`Size`: VARIANT / `S` / `S`·`M`
+- 2. Child Item—Loader / Lottie—`Property 1`: VARIANT / `1` / `1`·`2`·`3`
 ## Lottie
 Figma U:11623-1613
 ### 공통 사용 기준
@@ -1095,7 +1091,7 @@ Dot은 외부 페이지 이동 안내, Loader는 콘텐츠 로딩이에요. 비�
 ### 예제 유형
 - A. 알림 기능 안내：`Lottie / Alarm`
 - B. 출석 영역 강조：`Lottie / Checkin`
-- C. 이벤트 콘텐츠 연출：`Lottie / Thunderbolt1` · `Thunderbolt2`
+- C. 이벤트 콘텐츠 연출：`Lottie / Thunderbolt1`·`Thunderbolt2`
 - D. 퀴즈 참여 안내：`Lottie / Quiz`
 - E. AI 분석 중 안내：`Lottie / Meal`
 - F. 콘텐츠 혜택 안내：`Lottie / Shopping`
@@ -1112,7 +1108,7 @@ Dot은 외부 페이지 이동 안내, Loader는 콘텐츠 로딩이에요. 비�
 - E~G는 좌측의 360px 슬롯 안에서 가운데 정렬해요. 재생 버튼은 슬롯이 아닌 전체 예제 영역 우측 끝선에 맞춰요.
 - H 퀴즈 보상 안내는 개발 모션으로 확인되어 Figma·웹 Lottie 예제에서 제외했어요. 현재 예제는 A~G이며 원본 마스터는 보존해요.
 ### 규격과 속성
-- 프레임 표현 / `Property 1`에 숫자(`1` · `2` · `3` …)
+- 프레임 표현 / `Property 1`에 숫자(`1`·`2`·`3` …)
 - 프레임 수 / 2 ~ 8장
 - 크기 / 4 × 12 ~ 340 × 135 (용도별 제각각)
 - 배경 / 없음
@@ -1135,11 +1131,11 @@ Figma G:11636-3839, U:11636-3838
 - E. 스탬프 상품 두 개
 - F. 스탬프 상품 여러 개
 ### 규격과 속성
-- 그리드 폭 / 312 · 328 · 360
-- 상품 카드 폭 / 96 · 104 · 148 · 158 (그리드에 맞춤)
-- 카드 간격 / `Spacing/200`(8) · `Spacing/300`(12) · `Spacing/400`(16)
+- 그리드 폭 / 312·328·360
+- 상품 카드 폭 / 96·104·148·158 (그리드에 맞춤)
+- 카드 간격 / `Spacing/200`(8)·`Spacing/300`(12)·`Spacing/400`(16)
 - 이미지–내용 간격 / `Spacing/250` (10)
-- 좌우 패딩 / `Spacing/400`(16) · `Spacing/600`(24)
+- 좌우 패딩 / `Spacing/400`(16)·`Spacing/600`(24)
 - 구분선 / `Color/Gray_850` 1px (Stamp 계열)
 - 배치 / Product Grid·Naver는 가로 WRAP, Stamp는 2개씩 한 행을 구성
 - Shopping 열 / 행 간격 / 12 / 24
@@ -1166,13 +1162,13 @@ Figma G:11641-1302, U:11641-1301
 - F. 상품 안내용 쿠폰
 - G. 사용할 수 없는 쿠폰
 ### 규격과 속성
-- 폭 / 360 (전체 폭) · 332(`Media`) · 328(`Coupon`)
+- 폭 / 360 (전체 폭)·332(`Media`)·328(`Coupon`)
 - 높이 / 60 ~ 128
 - 이미지 / 80 × 80 (`Coupon`)
-- 배치 / 가로 — 이미지 좌 · 텍스트 우
-- 패딩 / `Spacing/600`(24) · `Spacing/500`(20) · `Spacing/400`(16) · `Spacing/300`(12)
-- 내부 간격 / `Spacing/500`(20) · `Spacing/400`(16), Product의 기존 값 14
-- 예제 항목 간격 / Action 16 · Media 12 · Product/Content 0 · Coupon 12
+- 배치 / 가로—이미지 좌·텍스트 우
+- 패딩 / `Spacing/600`(24)·`Spacing/500`(20)·`Spacing/400`(16)·`Spacing/300`(12)
+- 내부 간격 / `Spacing/500`(20)·`Spacing/400`(16), Product의 기존 값 14
+- 예제 항목 간격 / Action 16·Media 12·Product/Content 0·Coupon 12
 - 카드 테두리 / `Color/Gray_850` 1px (`Coupon`)
 - 구분선 / `Color/Gray_900` 하단 1px (`Product`)
 ## Product Scroll
@@ -1186,15 +1182,15 @@ Figma G:11653-1096, U:11653-1095
 - A. 심리테스트 목록
 - B. 출석 화면의 제휴 상품
 ### 규격과 속성
-- 마스터 콘텐츠 폭 / 648 · 728 (전체 항목을 펼친 샘플 폭)
-- 스크롤 표시 영역 / 부모 영역에 맞는 폭 · 가이드라인 2는 328, Usage는 360
-- 아이템 폭 / 84 (`Personality Test`) · 120 (`Check-in`)
-- 아이템 간격 / `Spacing/200`(8) · `Spacing/300`(12)
-- 이미지–텍스트 간격 / `Spacing/250`(10) · `Spacing/300`(12)
+- 마스터 콘텐츠 폭 / 648·728 (전체 항목을 펼친 샘플 폭)
+- 스크롤 표시 영역 / 부모 영역에 맞는 폭·가이드라인 2는 328, Usage는 360
+- 아이템 폭 / 84 (`Personality Test`)·120 (`Check-in`)
+- 아이템 간격 / `Spacing/200`(8)·`Spacing/300`(12)
+- 이미지–텍스트 간격 / `Spacing/250`(10)·`Spacing/300`(12)
 - 이미지 배경 / `Color/Gray_950` (플레이스홀더)
-- 이미지 라운드 / `Corner radius/150`(6) · `Corner radius/250`(10)
-- 텍스트 / `b500_13_regular` · `t1300_15_medium` · `t900_16_bold`
-- 1. Product Scroll — Master Component — `Variant`: VARIANT / `Personality Test` / `Personality Test` · `Check-in`
+- 이미지 라운드 / `Corner radius/150`(6)·`Corner radius/250`(10)
+- 텍스트 / `b500_13_regular`·`t1300_15_medium`·`t900_16_bold`
+- 1. Product Scroll—Master Component—`Variant`: VARIANT / `Personality Test` / `Personality Test`·`Check-in`
 ## Progress Stepper
 Figma G:11808-6699, U:11808-6700
 ### 사용 기준
@@ -1211,27 +1207,27 @@ Figma G:11808-6699, U:11808-6700
 검색형은 5개와 10개 구성 중 해당 미션의 단계 수에 맞는 유형을 사용.
 각 구성의 아이템 크기와 배열을 유지하고, 한 구성을 임의로 축소하거나 단계를 추가해 맞추지 않아요.
 ### 적용 시 주의
-조건 미달 Disabled → 조건 달성 Available → 수령 완료 Completed. 체크인 수령 전 ‘5금 받기’, 수령 후 ‘5금 적립’과 체크 표시를 함께 바꿔요.
+조건 미달 Disabled→조건 달성 Available→수령 완료 Completed. 체크인 수령 전 ‘5금 받기’, 수령 후 ‘5금 적립’과 체크 표시를 함께 바꿔요.
 ### 예제 유형
 - A. 누적 금액 보상：`Collect`
 - B. 반복 참여 횟수：`Pig`
 - C. 연속 참여 보상：`Quiz`
-- D. 누적 시청 보상：`News · Scroll=False`
+- D. 누적 시청 보상：`News·Scroll=False`
 - E. 완료 개수별 보상：`Personality-Test`
 - F. 체크인 미션 보상：`Check-In`
 - G. 반복 참여 완료 표시：`Movie`
 - H. 순서별 미션 완료：`Mission`
 - I. 복권 지급 조건：`Lottery`
-- J. 검색 미션 5개：`Progress Stepper · Property 1=5 · Item Size=L`
-- K. 검색 미션 10개：`Progress Stepper · Property 1=10 · Item Size=S`
-- L. 경로형 도전：`Express · Color=Blue`
+- J. 검색 미션 5개：`Progress Stepper·Property 1=5·Item Size=L`
+- K. 검색 미션 10개：`Progress Stepper·Property 1=10·Item Size=S`
+- L. 경로형 도전：`Express·Color=Blue`
 ### 규격과 속성
 - 방식 / 사용처
-- SLOT `Line` / Collect · Pig · Check-In · Lottery
-- Frame `Line` / Personality-Test · Quiz
+- SLOT `Line` / Collect·Pig·Check-In·Lottery
+- Frame `Line` / Personality-Test·Quiz
 - LINE 노드 / News
 - Vector / Express
-- 라인 없음 / Movie · Mission · Progress Stepper(Search)
+- 라인 없음 / Movie·Mission·Progress Stepper(Search)
 - Master / Line (트랙) / Gauge (채움)
 - Collect / `Color/Gray_850` / `Color/Secondary_Yellow`
 - Pig / `Color/Third_Pastel_Coral` / `Color/Primary_Orange`
@@ -1300,7 +1296,7 @@ Figma G:11698-2545, U:11698-2544
 - 라운드 / `Corner radius/250`
 - Padding / `Spacing/400`
 - Gap / `Spacing/250`
-- 텍스트 색 / `Color/Gray_400` · `Color/Gray_100`
+- 텍스트 색 / `Color/Gray_400`·`Color/Gray_100`
 ## Stepper
 Figma G:11719-1469, U:11719-1468
 ### 사용 기준
@@ -1322,13 +1318,13 @@ Figma G:11719-1469, U:11719-1468
 ### 규격과 속성
 - `… / Thumbnail` / 8 / `Spacing/200`
 - `… / NumberIcon` / 20 / `Spacing/500`
-- 배경 / `Color/Primary_Orange` · `Color/Gray_White`
-- 텍스트 색 / `Gray_100` · `Gray_300` · `Gray_500` · `Gray_White`
+- 배경 / `Color/Primary_Orange`·`Color/Gray_White`
+- 텍스트 색 / `Gray_100`·`Gray_300`·`Gray_500`·`Gray_White`
 - 연결선 색 / `Color/Gray_800`
-- 텍스트 스타일 / `t1300_15_medium` · `b400_14_regular` · `b500_13_regular` · `t1050_14_bold`
+- 텍스트 스타일 / `t1300_15_medium`·`b400_14_regular`·`b500_13_regular`·`t1050_14_bold`
 - 라운드 / `Corner radius/circle`
-- 1. Stepper — Master Component — `Left`: VARIANT / `Thumbnail` · `Number Icon Description` · `Number Icon`
-- 2. `StepperRow / NumberIcon / Thumbnail` — `Title Bold`: VARIANT / `False` / `False` · `True`
+- 1. Stepper—Master Component—`Left`: VARIANT / `Thumbnail`·`Number Icon Description`·`Number Icon`
+- 2. `StepperRow / NumberIcon / Thumbnail`—`Title Bold`: VARIANT / `False` / `False`·`True`
 ## Swipe
 Figma G:11724-225, U:11724-226
 ### 사용 기준
@@ -1348,18 +1344,18 @@ Complete는 #E7550C 배경과 “완료” 문구로 표시. 손잡이는 숨기
 - A. 할 일 완료 대기：`Default`
 - B. 밀기 진행 중：`Dragging`
 - C. 금 지급 처리 중：`Near Complete`
-- D. 할 일 완료：`Complete` · 완료 문구와 금액·체크 뱃지
+- D. 할 일 완료：`Complete`·완료 문구와 금액·체크 뱃지
 - E. 완료 가능한 시간 만료：`Expired`
 ### 규격과 속성
 - 기본 바 배경 / #FF6315 / `Color/Primary_Orange`
-- 진행 바 · 처리 중 · 완료 배경 / #E7550C / 없음
-- 만료 배경 · 비활성 핸들 / #FFEADE / `Color/Third_Pastel_Coral`
+- 진행 바·처리 중·완료 배경 / #E7550C / 없음
+- 만료 배경·비활성 핸들 / #FFEADE / `Color/Third_Pastel_Coral`
 - 만료 문구 / #FFC59F / 없음
-- 핸들 원 · 문구 / #FFFFFF / `Color/Gray_White`
-- Padding / `Spacing/250` · `Spacing/900`
+- 핸들 원·문구 / #FFFFFF / `Color/Gray_White`
+- Padding / `Spacing/250`·`Spacing/900`
 - 라운드 / `Corner radius/circle`
-- 배경 · 아이콘 색 / 대부분 토큰
-- State / Default · Dragging · Near Complete · Complete · Expired
+- 배경·아이콘 색 / 대부분 토큰
+- State / Default·Dragging·Near Complete·Complete·Expired
 - Bubble / `Bubble` / 완료에도 금액·체크 표시 유지
 ## Switch
 Figma G:11739-612, U:11739-613
@@ -1381,12 +1377,12 @@ Figma G:11739-612, U:11739-613
 - C. 수신 및 정보 이용 동의
 - D. 권한과 선행 조건에 따른 비활성
 ### 규격과 속성
-- 배경 / `Primary_Orange` · `Gray_700` · `Gray_850`
+- 배경 / `Primary_Orange`·`Gray_700`·`Gray_850`
 - 손잡이 / `Color/Gray_White`
-- Padding · Gap / `Spacing/50`
+- Padding·Gap / `Spacing/50`
 - 라운드 / `Corner radius/circle`
-- 1. Switch — Master Component — `Check`: VARIANT / `On` / `Off` · `On`
-- 1. Switch — Master Component — `Disabled`: VARIANT / `False` / `True` · `False`
+- 1. Switch—Master Component—`Check`: VARIANT / `On` / `Off`·`On`
+- 1. Switch—Master Component—`Disabled`: VARIANT / `False` / `True`·`False`
 ## Tab Bar
 Figma G:11771-656, U:11771-657
 ### 사용 기준
@@ -1406,13 +1402,13 @@ Tab Bar는 화면 하단에 배치하고, 하단 광고를 함께 사용하는 �
 ### 규격과 속성
 - 아이콘 / `Color/Gray_100` / `Color/Gray_500`
 - 라벨 / `Color/Gray_100` / `Color/Gray_400`
-- 배경 · 아이콘 · 라벨 색 / `Gray_White` · `Gray_100` · `Gray_400` · `Gray_500` · `Primary_Orange` · `Secondary_Red`
-- Gap / `Spacing/100` · `600`
-- 1. Tab Bar — Master Component — `Home Indicator`: VARIANT / `True` · `False`
-- 2. `.primitive / Tab Bar / Tab Item` — `Selected`: VARIANT / `True` / `True` · `False`
-- 2. `.primitive / Tab Bar / Tab Item` — `Red Dot`: VARIANT / `False` / `False` · `True`
-- 2. `.primitive / Tab Bar / Tab Item` — `Show Tooltip`: BOOLEAN / `false`
-- 3. `.primitive / Tab Bar / Icons` — `Resource`: VARIANT / `05all` · `01pig` · `04wallet` · `02alarm` · `03shopping`
+- 배경·아이콘·라벨 색 / `Gray_White`·`Gray_100`·`Gray_400`·`Gray_500`·`Primary_Orange`·`Secondary_Red`
+- Gap / `Spacing/100`·`600`
+- 1. Tab Bar—Master Component—`Home Indicator`: VARIANT / `True`·`False`
+- 2. `.primitive / Tab Bar / Tab Item`—`Selected`: VARIANT / `True` / `True`·`False`
+- 2. `.primitive / Tab Bar / Tab Item`—`Red Dot`: VARIANT / `False` / `False`·`True`
+- 2. `.primitive / Tab Bar / Tab Item`—`Show Tooltip`: BOOLEAN / `false`
+- 3. `.primitive / Tab Bar / Icons`—`Resource`: VARIANT / `05all`·`01pig`·`04wallet`·`02alarm`·`03shopping`
 ## Tab
 Figma G:11765-3726, U:11765-3727
 ### 사용 기준
@@ -1426,15 +1422,15 @@ Figma G:11765-3726, U:11765-3727
 - A. 콘텐츠 구분
 - B. 쇼핑몰별 탐색
 ### 규격과 속성
-- `Underline` / 하단선 `Gray_850` → `Gray_100` / Regular → Bold
-- `Rounded` / 배경 `Gray_900` → 없음 / Regular → Bold · `Gray_400` → `Gray_Black`
-- `Circle` / 주황 링 숨김 → 보임 / Regular → Medium · `Gray_400` → `Primary_Orange`
-- Padding / `Spacing/50` · `100` · `250` · `400` · `500` — 비정수 4.8 / 3.6 제외
-- Gap / `Spacing/0` · `100` · `150` · `250` · `300`
-- 라운드 / `Corner radius/400` · `circle`
-- 텍스트 색 / `Gray_100` · `Gray_400` · `Gray_500` · `Gray_Black` · `Primary_Orange`
-- 선 색 / `Gray_100` · `Gray_850` · `Gray_950` · `Primary_Orange`
-- 1. Tab — Master Component — `Type`: VARIANT / `Underline` · `Rounded` · `Circle`
+- `Underline` / 하단선 `Gray_850`→`Gray_100` / Regular→Bold
+- `Rounded` / 배경 `Gray_900`→없음 / Regular→Bold·`Gray_400`→`Gray_Black`
+- `Circle` / 주황 링 숨김→보임 / Regular→Medium·`Gray_400`→`Primary_Orange`
+- Padding / `Spacing/50`·`100`·`250`·`400`·`500`—비정수 4.8 / 3.6 제외
+- Gap / `Spacing/0`·`100`·`150`·`250`·`300`
+- 라운드 / `Corner radius/400`·`circle`
+- 텍스트 색 / `Gray_100`·`Gray_400`·`Gray_500`·`Gray_Black`·`Primary_Orange`
+- 선 색 / `Gray_100`·`Gray_850`·`Gray_950`·`Primary_Orange`
+- 1. Tab—Master Component—`Type`: VARIANT / `Underline`·`Rounded`·`Circle`
 ## Text Button
 Figma G:11801-5945, U:11801-5946
 ### 사용 기준
@@ -1463,12 +1459,12 @@ XS·S·M·XL을 제공하며 Underline=True에는 Arrow를 함께 쓰지 않아�
 - Color 값 / 대응 토큰
 - `Primary_Orange` / `Color/Primary_Orange`
 - `Secondary_Blue` / `Color/Secondary_Blue`
-- `Gray_100` · `Gray_400` · `Gray_600` / `Color/Gray_*`
-- 텍스트 색 / `Primary_Orange` · `Secondary_Blue` · `Gray_100` · `Gray_400` · `Gray_600`
+- `Gray_100`·`Gray_400`·`Gray_600` / `Color/Gray_*`
+- 텍스트 색 / `Primary_Orange`·`Secondary_Blue`·`Gray_100`·`Gray_400`·`Gray_600`
 - 밑줄 색 / 위와 동일 토큰
-- Padding · Gap / 전부 0 — 바인딩 불필요
-- 1. Text Button — Master Component — `Color`: VARIANT / `Gray_100` / `Primary_Orange` · `Secondary_Blue` · `Gray_100` · `Gray_400` · `Gray_600`
-- 1. Text Button — Master Component — `Size`: VARIANT / `XS` / `XS` · `S` · `M` · `XL`
+- Padding·Gap / 전부 0—바인딩 불필요
+- 1. Text Button—Master Component—`Color`: VARIANT / `Gray_100` / `Primary_Orange`·`Secondary_Blue`·`Gray_100`·`Gray_400`·`Gray_600`
+- 1. Text Button—Master Component—`Size`: VARIANT / `XS` / `XS`·`S`·`M`·`XL`
 ## Text Field
 Figma G:11787-940, U:11787-941
 ### 사용 기준
@@ -1508,19 +1504,22 @@ Text Area 폭312·최소높이80·패딩16·본문/하단Gap16·하단높이20. 
 Figma G:11784-2005, U:11784-2006
 ### 사용 기준
 1. 정보의 양과 보여주는 방식에 맞는 유형을 사용해요
-한 항목씩 간결하게 보여줄 때는 Flip, 한 줄 내용을 가로로 이어 보여줄 때는 Marquee / Inline을 사용.
-닉네임·당첨 정보·후기를 함께 구성해 어떤 내용인지 알 수 있도록 해요.
+한 항목 요약은 Flip, 한 줄 가로 흐름은 Marquee / Inline. 닉네임·당첨 정보·후기를 유지해요.
 2. 표시 영역 안에서 내용이 이어지도록 구성해요
-후기를 여러 줄로 보여줄 때는 Marquee / Card를 사용. 카드의 닉네임·당첨일·본문 구성을 유지.
-한 줄 유형은 줄바꿈으로 높이를 늘리지 않고, 가로로 이어지는 내용은 표시 영역 밖으로 넘치지 않도록 처리해요.
+여러 줄 후기는 Marquee / Card. 한 줄형은 줄바꿈으로 높이를 늘리지 않으며 표시창에서 넘침을 처리해요.
+3. 후기의 길이와 사용 목적에 맞는 크기를 선택해요
+S는 짧은 일반 후기 요약. 금한돈 당첨 후기 티커는 50~100자 모두 M194×142고정으로 통일해요. 짧아도 줄이지 않고 S/M을 섞지 않아요.
 ### 적용 시 주의
-Flip360×36, Inline360×50. Card는후기 Size=M194×142고정 네개·간격10·전체806×142. 현재100자 테스트문구는각6줄이어도 카드높이142를 유지해요. 최신 M 원본142·FIXED를 확인했으며 자동 높이로 구현하지 않아요. 표시창은 화면폭에 맞춰 Clip하되 높이142를 확보해요. 과거312×110의110높이를 M에 적용하지 않아요. Inline의 두 Row는 가로 반복용이며 두 줄 본문이 아니에요.
+웹 Inline·Card: 드래그 이동·종료2초후 재생. 버튼정지/모션줄이기/비활성탭 우선, Flip 제외.
+Flip360×36, Inline360×50. Inline의 두 Row는 가로 반복용이며 두 줄 본문이 아니에요. Card는 Size=M194×142 네개·Gap10·전체806×142. 표시창 폭은 화면에 맞추고 높이142를 확보·Clip해요. 예제 C 슬롯360×158은 문서용 여유이며 카드와 달라요. 과거312×110을 M에 적용하지 않아요.
+금한돈 당첨 후기 최소50·최대100자는 해당 미션 전용. M 원본12450:4230 사용·Winner 미사용. 본문폭170·13 Regular/16·최대7줄·끝 말줄임, 높이142고정. 테스트4개·각100자·실제 인용 아님.
 ### 예제 유형
-- A. 당첨 소식 요약：`Ticker / Flip` · 360 × 36
-- B. 한 줄 후기 흐름：`Ticker / Marquee / Inline` · Default · 360 × 50
-- C. 카드형 후기 흐름：`Ticker / Marquee / Card` · 금한돈 당첨 후기·Size=M·높이142고정
+- A 당첨 소식 요약：Ticker / Flip
+- B 한 줄 후기 흐름：Ticker / Marquee / Inline·Default
+- C 카드형 후기 흐름：Ticker / Marquee / Card·M
+- D 후기 크기 비교·S/M：12478:563, 가이드3：12478:514
 ### 규격과 속성
-- 후기 아이템 / 원본 세트 `Grid Scroll`12450:4229 / Size=M / 4개 (기존 문서명 Grid Scroll / Scroll Item / Review)
+- 후기 아이템 / 세트 Grid Scroll12450:4229 / Size=M / 4개
 ## Toast
 Figma G:11776-502, U:11776-503
 ### 사용 기준
@@ -1536,13 +1535,13 @@ Toast의 폭은 대상 영역에 맞추고, 서로 겹치지 않도록 배치.
 ### 적용 시 주의
 배경은 #222222 Fill opacity80%, 레이어 opacity100%. Opacity_Black_100(#000000·75%)으로 대체하지 않아요. 한 줄 높이44·두 줄62, 라운드16. 대상 아래16은 화면 하단 고정 오프셋이 아니에요.
 ### 예제 유형
-- A. 리워드 참여 안내：`2 Line=False` · Gold · 「페이지 방문하고 금 받기!」
-- B. 적립 조건 안내：`2 Line=True` · 아이콘 없음 · 「광고 누르고, 광고 페이지에서 / 5초 이상 머무르면 금이 적립돼요!」
-- C. 적립 완료：`2 Line=False` · Firecracker · 「3금을 적립 받았어요!」
+- A. 리워드 참여 안내：`2 Line=False`·Gold·「페이지 방문하고 금 받기!」
+- B. 적립 조건 안내：`2 Line=True`·아이콘 없음·「광고 누르고, 광고 페이지에서 / 5초 이상 머무르면 금이 적립돼요!」
+- C. 적립 완료：`2 Line=False`·Firecracker·「3금을 적립 받았어요!」
 ### 규격과 속성
 - 문구 색 / `Color/Gray_White`
 - 라운드 / `Corner radius/400`
-- Padding · Gap / `Spacing/100` · `300` · `500`
-- 배경 / `#222222` · 80% 직접 값 · `Opacity_Black_100`으로 대체하지 않아요
-- 1. Toast — Master Component — `2 Line`: VARIANT / `True` · `False`
-- 2. `Toast / Icon / Image` — `Icon`: VARIANT / `Firecracker` · `Gold`
+- Padding·Gap / `Spacing/100`·`300`·`500`
+- 배경 / `#222222`·80% 직접 값·`Opacity_Black_100`으로 대체하지 않아요
+- 1. Toast—Master Component—`2 Line`: VARIANT / `True`·`False`
+- 2. `Toast / Icon / Image`—`Icon`: VARIANT / `Firecracker`·`Gold`
