@@ -775,17 +775,17 @@ Figma G:11857-5530, U:11857-5531
 Figma G:11540-1870, U:11540-1871
 ### 사용 기준
 1. 콘텐츠에 맞는 유형을 사용해요
-이동할 메뉴는 Icon, 시간대별 참여는 Live, 당첨 후기는 Winner를 사용.
+이동할 메뉴는 Icon, 시간대별 참여는 Live를 사용. 현재 금한돈 당첨 후기는 Ticker / Marquee / Card에서 후기 아이템 Size=M을 사용하며 Grid Scroll / Winner 묶음은 사용하지 않아요.
 화면 폭을 넘는 항목은 가로로 탐색하고, 아이템 크기와 간격은 각 컴포넌트의 기본 구성을 유지.
 2. 참여 상태에 맞춰 Live를 사용해요
 참여 가능은 Available, 참여 완료는 Completed, 시작 전은 Upcoming, 종료 후는 Ended를 사용.
 시간과 참여 여부에 맞는 상태를 선택하고, 참여할 수 없는 상태를 참여 가능한 버튼으로 표시하지 않아요.
 ### 적용 시 주의
-Review 본문만 최대4줄·초과 끝 말줄임(maxLines=4, textTruncation=ENDING). 폭118·13px/행간16·최대64px, 카드142×110을 유지. 닉네임·날짜와 구분하며 Ticker의 같은 인스턴스에도 적용. 웹 관련 이미지도 최신 원본을 사용.
+후기 아이템 세트12450:4229(현재 원본 이름 Grid Scroll)에 Size=S/M을 제공. S는142×110·본문폭118·최대4줄/64, M은194×158·본문폭170·최대7줄/112. 공통13 Regular/행간16·패딩12·Gap4·라운드8, textTruncation=ENDING·textAutoResize=HEIGHT. 닉네임·날짜와 본문 제한을 구분해요. 금한돈 당첨 후기는 최소50자·최대100자이며 현재 Ticker에서 M을 사용. 줄바꿈으로7줄을 넘으면 말줄임될 수 있고 글자 수 제한과 표시 줄 수는 별개예요.
 ### 예제 유형
 - A 쇼핑 메뉴 탐색：`Grid Scroll / Icon` · `Variant=Shopping`
 - B 시간대별 참여：`Grid Scroll / Live`
-- C 당첨 후기 탐색：`Grid Scroll / Winner`
+- C 기존 당첨 후기 구조 참고：`Grid Scroll / Winner` · 현재 미사용, 신규 서비스 적용은 Ticker의 M 기준
 ### 규격과 속성
 - 마스터 폭 / 598~664 (화면 밖으로 넘치는 스크롤 영역)
 - 마스터 높이 / 110~116
@@ -1487,7 +1487,7 @@ Auto Height=False는 지정 높이·내부 스크롤, True는 최소80부터 실
 7. 글자 수 안내가 필요할 때만 하단 표시를 켜요
 Character Progress 기본False. Progress는 좌측 원형+남은 수, Counter는 우측 현재/최대예요. 표시를 꺼도 값·검증은 유지.
 8. 필수 작성 조건과 최대 글자 수를 구분해요
-후기 최소100은 최대 제한·지급 완료가 아니에요. Counter는 확장용이며 현재 사용 사례는 없어요.
+금한돈 당첨 후기는 최소50자·최대100자예요. Progress는50에서 완료, 100은 최대 입력 제한이며 지급 완료와 달라요. 다른 사용처의 공통 제한으로 적용하지 않아요. Counter는 확장용이며 현재 사용 사례는 없어요.
 ### 적용 시 주의
 Text Area 폭312·최소높이80·패딩16·본문/하단Gap16·하단높이20. 본문15 Regular/행간19, 하단13 Regular/아이콘Gap4. Text Container의 Placeholder/Text를 수정해요. Filled×Auto Height 4조합, 보조 Progress의 Default/In Progress/Ready/Complete와 Counter의 Default만 지원. Task 패딩 왼쪽20·오른쪽24예요.
 공백·줄바꿈 포함 Array.from(value).length로 세고 한글 조합 중에도 기준 도달 즉시 체크와0을 표시. 미만 삭제 시 진행 중, 재충족 시 모션 재생이에요. 완료 원20은560ms scale .55→1.18→.92→1.06→1, 체크는120ms 뒤320ms. 모션 줄이기는 즉시 최종 상태예요.
@@ -1514,13 +1514,13 @@ Figma G:11784-2005, U:11784-2006
 후기를 여러 줄로 보여줄 때는 Marquee / Card를 사용. 카드의 닉네임·당첨일·본문 구성을 유지.
 한 줄 유형은 줄바꿈으로 높이를 늘리지 않고, 가로로 이어지는 내용은 표시 영역 밖으로 넘치지 않도록 처리해요.
 ### 적용 시 주의
-Flip360×36, Inline360×50. Card 예제는312×110 표시영역에 Clip을 적용. Inline의 두 Row는 가로 반복용이며 두 줄 본문이 아니에요.
+Flip360×36, Inline360×50. Card는후기 Size=M194×158 네개·간격10·전체806×158. 현재 예제 C 슬롯360×158, 내부티커806×158. 표시창은 화면폭에 맞춰 Clip하되 높이158을 확보해요. 과거312×110의110높이를 M에 적용하지 않아요. Inline의 두 Row는 가로 반복용이며 두 줄 본문이 아니에요.
 ### 예제 유형
 - A. 당첨 소식 요약：`Ticker / Flip` · 360 × 36
 - B. 한 줄 후기 흐름：`Ticker / Marquee / Inline` · Default · 360 × 50
-- C. 카드형 후기 흐름：`Ticker / Marquee / Card` · 표시 영역 312 × 110
+- C. 카드형 후기 흐름：`Ticker / Marquee / Card` · 금한돈 당첨 후기·Size=M·표시 높이158
 ### 규격과 속성
-- Grid Scroll / `Grid Scroll / Scroll Item / Review` / 4
+- 후기 아이템 / 원본 세트 `Grid Scroll`12450:4229 / Size=M / 4개 (기존 문서명 Grid Scroll / Scroll Item / Review)
 ## Toast
 Figma G:11776-502, U:11776-503
 ### 사용 기준

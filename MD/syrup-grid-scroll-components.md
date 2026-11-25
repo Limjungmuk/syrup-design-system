@@ -5,8 +5,8 @@
 | Figma File | [Syrup_Design-System](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System) |
 | Page / Section | `Grid Scroll` 페이지 → [Grid Scroll 섹션 `8958:77373`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=8958-77373) |
 | 섹션 구성 | `Grid Scroll` 1440×2720 → `Guidelines` 960×1016 → `Usage` 1360×464 (가로 일렬) · 별도 `Section 1` 2588×6604 |
-| 컴포넌트 수 | **7개** (Component Set 3 · Component 4) |
-| 기준일 | 2026-11-23 (Review 본문 최대 4줄·초과 말줄임 확인) |
+| 컴포넌트 수 | **7개** (Component Set 4 · Component 3; 후기 아이템의 Size 세트 전환 반영) |
+| 기준일 | 2026-11-25 (후기 아이템 Size=S/M 및 티커 M 사용 기준 반영) |
 | 관련 문서 | [syrup-design-tokens.md](syrup-design-tokens.md) · [syrup-ad-components.md](syrup-ad-components.md) · [syrup-dialog-components.md](syrup-dialog-components.md) · [syrup-alert-components.md](syrup-alert-components.md) · [syrup-badge-components.md](syrup-badge-components.md) · [syrup-banner-components.md](syrup-banner-components.md) · [syrup-border-components.md](syrup-border-components.md) · [syrup-bottom-info-components.md](syrup-bottom-info-components.md) · [syrup-bottom-cta-components.md](syrup-bottom-cta-components.md) · [syrup-bottom-sheet-components.md](syrup-bottom-sheet-components.md) · [syrup-bubble-components.md](syrup-bubble-components.md) · [syrup-button-components.md](syrup-button-components.md) · [syrup-card-components.md](syrup-card-components.md) · [syrup-checkbox-components.md](syrup-checkbox-components.md) · [syrup-chip-components.md](syrup-chip-components.md) · [syrup-dim-components.md](syrup-dim-components.md) · [syrup-grid-list-components.md](syrup-grid-list-components.md) · [syrup-header-components.md](syrup-header-components.md) · [syrup-icon-button-components.md](syrup-icon-button-components.md) · [syrup-indicator-components.md](syrup-indicator-components.md) · [syrup-keypad-components.md](syrup-keypad-components.md) · [syrup-label-components.md](syrup-label-components.md) · [syrup-list-footer-components.md](syrup-list-footer-components.md) · [syrup-list-header-components.md](syrup-list-header-components.md) · [syrup-list-row-components.md](syrup-list-row-components.md) · [syrup-loader-components.md](syrup-loader-components.md) · [syrup-lottie-components.md](syrup-lottie-components.md) · [syrup-product-grid-components.md](syrup-product-grid-components.md) · [syrup-product-list-components.md](syrup-product-list-components.md) · [syrup-product-scroll-components.md](syrup-product-scroll-components.md) · [syrup-progress-stepper-components.md](syrup-progress-stepper-components.md) · [syrup-result-components.md](syrup-result-components.md) · [syrup-search-field-components.md](syrup-search-field-components.md) · [syrup-stepper-components.md](syrup-stepper-components.md) · [syrup-swipe-components.md](syrup-swipe-components.md) · [syrup-switch-components.md](syrup-switch-components.md) · [syrup-tab-components.md](syrup-tab-components.md) · [syrup-tab-bar-components.md](syrup-tab-bar-components.md) · [syrup-text-button-components.md](syrup-text-button-components.md) · [syrup-text-field-components.md](syrup-text-field-components.md) · [syrup-ticker-components.md](syrup-ticker-components.md) · [syrup-toast-components.md](syrup-toast-components.md) |
 
 > **아이콘과 텍스트로 구성된 아이템을 가로로 스크롤하며 탐색하는 리스트 컴포넌트에요.**
@@ -27,6 +27,8 @@
 
 2026-11-11 중복 이름을 Item·Icon·Image 역할로 구분했어요. 상위 묶음 이름과 원본 연결은 유지해요.
 - `Grid Scroll / Icon / Image`: 이번에 공개 이름으로 정리한 개별 에셋 `8958:77489` / 기존 상위 묶음 `8958:77378`.
+
+> 2026-11-25 현재 사용: 금한돈 당첨 후기는 최소 50자·최대 100자이며, Ticker의 M 후기 아이템으로 표시해요. `Grid Scroll / Winner` 묶음은 현재 미사용이에요. 아래 과거 점검 기록·사용 건수와 구분해요.
 
 ## 목차
 
@@ -67,7 +69,7 @@
 | 2 | `Grid Scroll / Live` | Component | — | 604 × 116 | **0** |
 | 3 | `Grid Scroll / Winner` | Component | — | 598 × 110 | **0** |
 | 4 | `Grid Scroll / Scroll Item / Icon/Shopping` | Component | — | 56 × 98 | 18 |
-| 5 | `Grid Scroll / Scroll Item / Review` | Component | — | 142 × 110 | 8 |
+| 5 | 후기 아이템 (현재 세트 `Grid Scroll`) | Component Set | `Size=S / M` | S 142 × 110 · M 194 × 158 | 과거 8건 |
 | 6 | `Grid Scroll / Scroll Item / Live` | Set | `State` 4종 | 282 × 116 | 2 |
 | 7 | `Grid Scroll / Icon / Image` | Set | `Variant` **17종** | 56 × 56 | 20 |
 
@@ -120,7 +122,7 @@
 | Gap | `Spacing/250` (10) |
 | Radius | `Corner radius/300` (12) |
 
-당첨자 축하 메시지 카드를 나열합니다. `.primitive / … / Review`를 담습니다.
+기존 S 후기 아이템 4개를 나열하는 묶음이에요. **현재 서비스에서는 사용하지 않으며**, 금한돈 당첨 후기는 `Ticker / Marquee / Card` 안의 `Size=M`으로 사용해요. 원본은 삭제하지 않고 기존 구조 참고용으로 유지해요.
 
 > `Live`와 `Winner`는 **인스턴스가 0건**입니다 → [점검 5](#5-live--winner-마스터-사용-0건)
 
@@ -143,21 +145,23 @@
 
 레이어 이름이 **`Icon/Shopping`** 으로 슬래시 앞뒤 공백이 없습니다 → [점검 3](#3-이름-규칙-불일치--iconshopping)
 
-### Grid Scroll / Scroll Item / Review
+### 후기 아이템 — Size=S / M
 
-**Node** `10577:4138` · Component · 142 × 110
+**현재 원본** [컴포넌트 세트 `12450:4229`](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12450-4229) · `Size=S / M` · 기본값 S
 
-| 항목 | 값 |
-| --- | --- |
-| 방향 | 세로 |
-| Padding | `Spacing/300` (12) 사방 |
-| Gap | `Spacing/100` (4) |
-| 배경 | **`Color/Third_Pastel_Blue`** |
-| Radius | `Corner radius/200` (8) |
+기존 문서의 `Grid Scroll / Scroll Item / Review`에 Size 속성이 추가됐어요. 현재 피그마 세트 이름은 `Grid Scroll`이며, 문서에서는 다른 스크롤 묶음과 구분해 ‘후기 아이템’으로 설명해요. 이름만으로 `Grid Scroll / Winner` 묶음과 혼동하지 않아요.
 
-축하 메시지를 담는 작은 카드입니다. 인스턴스 8건(`Grid Scroll` 4 · **`Ticker` 4**)으로, **다른 페이지에서도 쓰이는 유일한 Scroll Item**입니다.
+| Size | 원본 노드 | 카드 크기 | 본문 폭 | 본문 최대 줄 수 · 높이 | 사용 기준 |
+| --- | --- | --- | --- | --- | --- |
+| S | `10577:4138` | 142 × 110 | 118 | 4줄 · 64 | 기존 소형 규격 유지 |
+| M | `12450:4230` | 194 × 158 | 170 | 7줄 · 112 | 현재 금한돈 당첨 후기 티커 |
 
-Review 본문 `10577:4119`는 최대 4줄까지 표시하고 초과하면 끝에 말줄임표를 표시해요. 현재 원본은 `maxLines=4`, `textTruncation=ENDING`, `textAutoResize=HEIGHT`, 본문 폭 118·13px·행간 16이며 4줄 높이는 64예요. 글자 수로 임의 절단하거나 카드 높이를 늘려 전체 후기를 펼치지 않아요. 닉네임·당첨 날짜에는 이 4줄 제한을 일괄 적용하지 않아요. 동일 Review 인스턴스를 사용하는 Grid Scroll과 Ticker에서도 이 기준을 유지해요.
+- 공통: 세로 구성, 사방 패딩 12, Gap 4, `Color/Third_Pastel_Blue`, 라운드 8. 본문은 Pretendard 13 Regular / 행간 16이에요.
+- S 본문 `10577:4119`는 `maxLines=4`, M 본문 `12450:4234`는 `maxLines=7`이에요. 둘 다 `textTruncation=ENDING`, `textAutoResize=HEIGHT`로 초과 부분은 끝 말줄임 처리해요. 닉네임·당첨 날짜에는 본문의 줄 수 제한을 일괄 적용하지 않아요.
+- **금한돈 당첨 후기의 작성 조건은 최소 50자·최대 100자**예요. 최대 100자 후기를 보여주기 위해 M을 추가했어요. 모든 리뷰나 입력 컴포넌트에 공통 적용하는 정책은 아니에요.
+- 현재 서비스는 후기 아이템을 **Ticker / Marquee / Card 내부에서 Size=M으로 사용**해요. 티커의 기존 S 또는 4줄 기준을 그대로 적용하지 않아요.
+- 글자 수 검증과 표시 줄 수는 별개예요. 줄바꿈 등에 따라 7줄을 넘으면 말줄임이 적용되므로, ‘100자 이하면 어떤 입력이든 전부 보인다’고 보장하지 않아요. 카드 크기를 수동 확대하지 말고 Size 속성을 선택해요.
+- `Grid Scroll / Winner`는 기존 S 4개를 담은 미사용 묶음으로 남아 있어요. 현재 서비스의 후기 표시를 구현할 때 이 묶음을 새로 사용하도록 안내하지 않아요.
 
 ### Grid Scroll / Scroll Item / Live
 
@@ -257,7 +261,7 @@ Review 본문 `10577:4119`는 최대 4줄까지 표시하고 초과하면 끝에
 | --- | --- | --- | --- | --- |
 | **A** | 쇼핑 메뉴 탐색 | 쇼핑몰이나 서비스로 이동할 때 Icon 유형을 사용해요. 아이콘 아래에 이름과 적립 혜택을 표시하고 가로로 탐색해요. | `Grid Scroll / Icon` · `Variant=Shopping` | 664 · 간격 **20** · 9개 |
 | **B** | 시간대별 참여 | 정해진 시간에 참여하는 콘텐츠에는 Live 유형을 사용해요. 시간과 참여 상태를 보여주고, 상태에 맞는 버튼을 사용해요. | `Grid Scroll / Live` | 604 · 간격 **8** · 2개 |
-| **C** | 당첨 후기 탐색 | 여러 당첨 후기를 나란히 보여줄 때 Winner 유형을 사용해요. 자동으로 흐르는 후기는 Ticker에서 별도로 구성해요. | `Grid Scroll / Winner` | 598 · 간격 **10** · 4개 |
+| **C** | 당첨 후기 탐색 | 기존 Winner 구조 참고 예제예요. 현재 서비스의 금한돈 당첨 후기는 Ticker의 M 후기 아이템을 사용해요. | `Grid Scroll / Winner` | 598 · 간격 **10** · 4개 |
 
 **세 컷 모두 360 화면 밖으로 넘칩니다.** 행 너비가 598~664인데 화면이 360이라 오른쪽이 잘립니다. **가로 스크롤**이 되는 상태를 Figma에서 그대로 보여 준 것입니다.
 
@@ -271,7 +275,7 @@ Review 본문 `10577:4119`는 최대 4줄까지 표시하고 초과하면 끝에
 
 **B만 회색 배경 위에 있습니다.** Live 아이템이 흰 카드라 흰 화면에서는 경계가 보이지 않아, 화면 배경을 `Color/Gray_950`으로 두었습니다. A · C는 아이템 자체가 색을 가져 흰 배경에서도 읽힙니다.
 
-**C의 설명이 경계를 그어 줍니다.** 「자동으로 흐르는 후기는 Ticker에서 별도로 구성해요」 — 같은 후기 카드라도 **가로로 넘겨 보면 Grid Scroll, 저절로 흐르면 Ticker**입니다. 제품 실측이 정확히 그렇습니다.
+**현재 사용 기준(2026-11-25):** C는 기존 Winner 구조를 남긴 참고 예제이며, 현재 서비스의 금한돈 당첨 후기는 Ticker에서 M으로 구성해요. 아래 제품 실측·사용 건수는 과거 조사 기록이에요.
 
 ### 제품 실측 (2026-11-06)
 
@@ -309,7 +313,7 @@ Review 본문 `10577:4119`는 최대 4줄까지 표시하고 초과하면 끝에
 
 ### 1. 콘텐츠에 맞는 유형을 사용해요
 
-이동할 메뉴는 Icon, 시간대별 참여는 Live, 당첨 후기는 Winner를 사용해요.
+이동할 메뉴는 Icon, 시간대별 참여는 Live를 사용해요. 현재 금한돈 당첨 후기는 Ticker / Marquee / Card의 후기 아이템 Size=M을 사용하며 Winner 묶음은 사용하지 않아요.
 화면 폭을 넘는 항목은 가로로 탐색하고, 아이템 크기와 간격은 각 컴포넌트의 기본 구성을 유지해요.
 
 | 라벨 | 마스터 | 아이템 | 간격 | 담는 것 |
@@ -427,7 +431,7 @@ Grid List에서 `56 /Pocket`을 정리한 것과 **같은 유형**입니다. `Sc
 
 **`Review` 16건이 전부 Ticker 안에 있다는 것이 중요합니다.** 같은 후기 카드를 **가로로 넘겨 보면 Grid Scroll, 저절로 흐르면 Ticker**입니다. [Usage C](#usage)의 설명이 그 경계를 이미 적어 두었습니다 — `Grid Scroll / Winner` 마스터가 제품에서 안 쓰이는 것은 **쓸모가 없어서가 아니라 그 화면이 Ticker를 골랐기 때문**입니다.
 
-마스터를 유지할지는 **「넘겨 보는 후기」 화면을 만들 계획이 있는지**에 달려 있습니다. 계획이 없다면 Winner는 Ticker 쪽으로 넘기고, Live는 세트 없이 아이템만 쓰는 현재 방식을 인정하는 정리도 가능합니다.
+2026-11-25 사용자 확인: Winner 묶음은 현재 사용하지 않으며, 후기 아이템은 티커에서만 사용해요. 금한돈 당첨 후기에는 M을 적용해요. 아래 과거 사용 건수는 현재 규격이나 신규 적용 권고로 해석하지 않아요.
 
 ### 6. 스타일 미적용 텍스트 16건
 
@@ -449,7 +453,7 @@ Grid List에서 `56 /Pocket`을 정리한 것과 **같은 유형**입니다. `Sc
 | line-height | **16** | **18** |
 | letter-spacing | 0 | 0 |
 
-**라인하이트만 2 다릅니다.** 스타일을 적용하면 텍스트 블록 높이가 늘어나므로 무손실은 아닙니다. 현재 본문은 최대 4줄·끝 말줄임이므로 `Review` 카드(142 × 110) 높이에 영향을 줄 수 있어, 적용 전 확인이 필요합니다.
+**라인하이트만 2 다릅니다.** 스타일을 적용하면 텍스트 블록 높이가 늘어나므로 무손실은 아닙니다. S 본문은 최대 4줄, M은 최대 7줄·끝 말줄임이므로 각 카드 높이(S 110 / M 158)에 영향을 줄 수 있어 적용 전 확인이 필요합니다.
 
 ### 7. Pretendard SemiBold 4건
 

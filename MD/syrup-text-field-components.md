@@ -134,7 +134,7 @@ Filled=False는 회색 테두리, True는 주황 테두리예요. False를 Disab
 
 - Type=Progress: 좌측 하단의 주황 원형 진행률 + 남은 글자 수. 조건 충족 시 주황 원 안의 흰 체크와 0을 유지해요.
 - Type=Counter: 우측 하단 현재/최대 글자 수. 향후 확장용이며 현재 서비스 적용 사례는 없어요.
-- 표시 On/Off와 유효성 검증은 별개예요. 실제 후기 미션 최소 100글자는 최대 제한이 아니며, Counter 예시의 최대 100과 구분해요.
+- 표시 On/Off와 유효성 검증은 별개예요. 금한돈 당첨 후기는 최소 50자·최대 100자예요(2026-11-25 변경). Progress의 완료 기준 50과 최대 입력 제한 100을 구분하며, 이 정책을 다른 사용처의 공통 제한으로 적용하지 않아요.
 
 ### 입력·재생 조건
 공백과 줄바꿈을 포함한 화면 입력값을 Unicode 코드 포인트 단위(`Array.from(value).length`)로 계산해요. 한글 조합 중에도 화면 글자 수가 기준에 도달해 남은 수가 0이 되는 즉시 완료를 표시해요. 초과 입력의 남은 수는 0으로 유지해요. 입력값이 비어 진행률이 0이면 주황색 진행 선을 완전히 숨겨요. 조건 미만으로 삭제한 뒤 다시 충족하면 완료 모션이 재생돼요.
@@ -220,7 +220,7 @@ Character Progress로 하단 표시를 켜거나 꺼요. Type=Progress는 좌측
 
 ### 8. 필수 작성 조건과 최대 글자 수를 구분해요
 
-금한돈 당첨 후기 미션은 최소 100글자가 필수예요. Progress는 입력할수록 채워지고 조건 충족 즉시 체크와 0을 표시해요. 삭제해 조건 미만이면 진행 중으로 돌아가요. 최소 조건은 최대 입력 제한이나 리워드 지급 완료가 아니에요. Counter는 향후 확장용이며 현재 서비스 사용 사례는 없어요. 웹 상단만 30글자 완료 시연이에요.
+금한돈 당첨 후기 미션은 최소 50자 작성이 필수이고 최대 100자까지 입력해요(2026-11-25 변경). Progress는 50자를 기준으로 입력할수록 채워지고 조건 충족 즉시 체크와 0을 표시해요. 50자를 충족한 뒤에도 최대 100자까지 작성할 수 있어요. 삭제해 조건 미만이면 진행 중으로 돌아가요. 최소 조건은 최대 입력 제한이나 리워드 지급 완료가 아니에요. Counter는 향후 확장용이며 현재 서비스 사용 사례는 없어요. 웹 상단만 30글자 완료 시연이에요.
 
 ---
 
@@ -237,7 +237,7 @@ Character Progress로 하단 표시를 켜거나 꺼요. Type=Progress는 좌측
 | E. 할 일 직접 입력 | 목록에서 원하는 할 일을 직접 입력해요. 내용이 없으면 Filled=False, 입력한 내용이 있으면 Filled=True로 표시해요. | Task · Filled=False / True · 예제 폭 328, 높이 64 | [E](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1310) |
 | F. 의견과 소감 작성 | 여러 줄 의견을 입력하고 하단 안내는 필요할 때만 켜요. | Text Area · Filled | [F](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=11787-1344) |
 | G. 고정 높이와 자동 높이 | 지정 높이·내부 스크롤과 최소 80px부터 내용에 따른 확장·축소를 비교해요. | Text Area | [G](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-705) |
-| H. 필수 후기 작성 진행률 | 최소 100글자 후기의 입력 전·진행 중·완료와 재입력 조건을 안내해요. | Text Area | [H](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-740) |
+| H. 필수 후기 작성 진행률 | 금한돈 당첨 후기의 최소 50자·최대 100자와 입력 전·진행 중·완료·재입력 조건을 안내해요. | Text Area | [H](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-740) |
 | I. 선택형 글자 수 카운터 | 우측 현재/최대 글자 수를 표시하는 확장용 예시예요. | Text Area | [I](https://www.figma.com/design/KiAKYEpdiOFwGzFUrqfW77/Syrup_Design-System?node-id=12387-775) |
 
 ## 문서용 정렬 설정과 실제 사용 규격
